@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/sons">
+        <file>SonNote/dom.wav</file>
+        <file>SonNote/doM.wav</file>
+        <file>SonNote/domD.wav</file>
+        <file>SonNote/doMD.wav</file>
+        <file>SonNote/fam.wav</file>
+        <file>SonNote/faM.wav</file>
+        <file>SonNote/famD.wav</file>
+        <file>SonNote/faMD.wav</file>
+        <file>SonNote/lam.wav</file>
+        <file>SonNote/laM.wav</file>
+        <file>SonNote/lamD.wav</file>
+        <file>SonNote/laMD.wav</file>
+        <file>SonNote/mim.wav</file>
+        <file>SonNote/miM.wav</file>
+        <file>SonNote/rem.wav</file>
+        <file>SonNote/reM.wav</file>
+        <file>SonNote/remD.wav</file>
+        <file>SonNote/reMD.wav</file>
+        <file>SonNote/sim.wav</file>
+        <file>SonNote/siM.wav</file>
+        <file>SonNote/solm.wav</file>
+        <file>SonNote/solM.wav</file>
+        <file>SonNote/solmD.wav</file>
+        <file>SonNote/solMD.wav</file>
+    </qresource>
+</RCC>

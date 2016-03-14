@@ -6,6 +6,7 @@
 #include <QPushButton>
 #include <QStackedWidget>
 #include "fenetresecondaire1.h"
+#include <QSound>
 
 namespace Ui {
 class MainWindow;
@@ -37,6 +38,20 @@ public:
 
 public slots:
     void slotDisplayFen(int fenIndex);
+    void on_pushButtonDom_clicked();
+    void on_pushButtonDoM_clicked();
+    void on_pushButtonRem_clicked();
+    void on_pushButtonReM_clicked();
+    void on_pushButtonMim_clicked();
+    void on_pushButtonMiM_clicked();
+    void on_pushButtonFam_clicked();
+    void on_pushButtonFaM_clicked();
+    void on_pushButtonSolm_clicked();
+    void on_pushButtonSolM_clicked();
+    void on_pushButtonLam_clicked();
+    void on_pushButtonLaM_clicked();
+    void on_pushButtonSim_clicked();
+    void on_pushButtonSiM_clicked();
 
 private:
     Ui::MainWindow *ui;

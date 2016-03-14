@@ -7,6 +7,7 @@
 #include <QDesktopWidget>
 #include <QDebug>
 #include <QStackedWidget>
+#include <QMediaPlayer>
 
 
 
@@ -14,7 +15,8 @@ MainWindow::MainWindow()
 {
 
     // Redimension de la fenetre d'origine
-    resize(700,500);
+    resize(700,600);
+    setFixedSize(700,600);
 
 
     // Largeur de la fenetre de l'application
@@ -25,8 +27,13 @@ MainWindow::MainWindow()
 
 
     // Création du bouton retour
+
+    int largeurBouton = (largeur*15)/100;
+    int hauteurBouton = (hauteur*10)/100;
+    int xBoutonRetour = (largeur*10)/100;
+    int yBoutonRetour = hauteur-((hauteur*20)/100);
     retour = new QPushButton("Retour",this);
-    retour->setGeometry((largeur*10)/100,hauteur-((hauteur*20)/100),(largeur*20)/100,(hauteur*10)/100);//positionH, positionV, tailleH, tailleV
+    retour->setGeometry(xBoutonRetour,yBoutonRetour,largeurBouton,hauteurBouton);//positionH, positionV, tailleH, tailleV
     //retour->deleteLater();
     retour->show();
 
@@ -59,10 +66,10 @@ MainWindow::MainWindow()
 
 
     // Modification de la forme et du placement des boutons.
-    int largeurDeTouche = (largeur*5)/100;
+    int largeurDeTouche = (largeur - (2*((largeur*10)/100)))/14;
     int hauteurDeTouche = (hauteur*30)/100;
     int xTouche = (largeur*10)/100;
-    int yTouche = hauteur/3;
+    int yTouche = hauteur/2;
 
     do1->setGeometry(xTouche, yTouche, largeurDeTouche, hauteurDeTouche);
     re1->setGeometry(xTouche+largeurDeTouche, yTouche, largeurDeTouche, hauteurDeTouche);
@@ -78,6 +85,21 @@ MainWindow::MainWindow()
     sol2->setGeometry(xTouche+(11*largeurDeTouche), yTouche, largeurDeTouche, hauteurDeTouche);
     la2->setGeometry(xTouche+(12*largeurDeTouche), yTouche, largeurDeTouche, hauteurDeTouche);
     si2->setGeometry(xTouche+(13*largeurDeTouche), yTouche, largeurDeTouche, hauteurDeTouche);
+
+    connect(do1, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonDoM_clicked()));
+    connect(do2, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonDom_clicked()));
+    connect(re1, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonReM_clicked()));
+    connect(re2, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonRem_clicked()));
+    connect(mi1, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonMiM_clicked()));
+    connect(mi2, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonMim_clicked()));
+    connect(fa1, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonFaM_clicked()));
+    connect(fa2, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonFam_clicked()));
+    connect(sol1, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonSolM_clicked()));
+    connect(sol2, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonSolm_clicked()));
+    connect(la1, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonLaM_clicked()));
+    connect(la2, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonLam_clicked()));
+    connect(si1, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonSiM_clicked()));
+    connect(si2, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonSim_clicked()));
 }
 
 MainWindow::~MainWindow()
@@ -136,4 +158,121 @@ void MainWindow::paintEvent(QPaintEvent *e){
     qreal y = rectangle.y()+(rectangle.width()/2);
     painter.drawLine(x, y, x, y-(espaceEntreLigne*3));
 
+}
+
+void MainWindow::on_pushButtonDom_clicked()
+{
+ QMediaPlayer* player = new QMediaPlayer;
+
+ player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/dom.wav"));
+ player->setVolume(100);
+ player->play();
+
+ qDebug() << "J'ai cliqué sur un Do mineur ";
+}
+
+void MainWindow::on_pushButtonDoM_clicked(){
+    QMediaPlayer* player = new QMediaPlayer;
+
+    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/doM.wav"));
+    player->setVolume(100);
+    player->play();
+
+    qDebug() << "J'ai cliqué sur un Do majeur ";
+}
+
+void MainWindow::on_pushButtonRem_clicked(){
+    QMediaPlayer* player = new QMediaPlayer;
+
+    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/rem.wav"));
+    player->setVolume(100);
+    player->play();
+}
+
+void MainWindow::on_pushButtonReM_clicked(){
+    QMediaPlayer* player = new QMediaPlayer;
+
+    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/reM.wav"));
+    player->setVolume(100);
+    player->play();
+}
+
+void MainWindow::on_pushButtonMim_clicked(){
+    QMediaPlayer* player = new QMediaPlayer;
+
+    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/mim.wav"));
+    player->setVolume(100);
+    player->play();
+}
+
+void MainWindow::on_pushButtonMiM_clicked(){
+    QMediaPlayer* player = new QMediaPlayer;
+
+    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/miM.wav"));
+    player->setVolume(100);
+    player->play();
+}
+
+void MainWindow::on_pushButtonFam_clicked(){
+    QMediaPlayer* player = new QMediaPlayer;
+
+    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/fam.wav"));
+    player->setVolume(100);
+    player->play();
+}
+
+void MainWindow::on_pushButtonFaM_clicked(){
+    QMediaPlayer* player = new QMediaPlayer;
+
+    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/faM.wav"));
+    player->setVolume(100);
+    player->play();
+}
+
+void MainWindow::on_pushButtonSolm_clicked(){
+    QMediaPlayer* player = new QMediaPlayer;
+
+    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/solm.wav"));
+    player->setVolume(100);
+    player->play();
+}
+
+void MainWindow::on_pushButtonSolM_clicked(){
+    QMediaPlayer* player = new QMediaPlayer;
+
+    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/solM.wav"));
+    player->setVolume(100);
+    player->play();
+}
+
+void MainWindow::on_pushButtonLam_clicked(){
+    QMediaPlayer* player = new QMediaPlayer;
+
+    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/lam.wav"));
+    player->setVolume(100);
+    player->play();
+}
+
+void MainWindow::on_pushButtonLaM_clicked(){
+    QMediaPlayer* player = new QMediaPlayer;
+
+    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/laM.wav"));
+    player->setVolume(100);
+    player->play();
+}
+
+void MainWindow::on_pushButtonSim_clicked(){
+    QMediaPlayer* player = new QMediaPlayer;
+
+    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/sim.wav"));
+    player->setVolume(100);
+    player->play();
+}
+
+void MainWindow::on_pushButtonSiM_clicked(){
+    QMediaPlayer* player = new QMediaPlayer;
+
+    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/siM.wav"));
+    player->setVolume(100);
+    player->play();
 }
