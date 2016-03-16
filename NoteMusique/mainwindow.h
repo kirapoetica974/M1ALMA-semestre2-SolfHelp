@@ -6,7 +6,7 @@
 #include <QPushButton>
 #include <QStackedWidget>
 #include "fenetresecondaire1.h"
-#include <QSound>
+#include "QtMultimedia/QMediaPlayer"
 
 namespace Ui {
 class MainWindow;
@@ -35,6 +35,7 @@ public:
     QPushButton* sol2;
     QPushButton* la2;
     QPushButton* si2;
+    QMediaPlayer* player;
 
 public slots:
     void slotDisplayFen(int fenIndex);

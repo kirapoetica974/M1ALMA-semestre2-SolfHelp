@@ -15,10 +15,12 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    fenetresecondaire1.cpp
+    fenetresecondaire1.cpp \
+    clavierpiano.cpp
 
 HEADERS  += mainwindow.h \
-    fenetresecondaire1.h
+    fenetresecondaire1.h \
+    clavierpiano.h
 
 FORMS    += mainwindow.ui
 

@@ -162,29 +162,25 @@ void MainWindow::paintEvent(QPaintEvent *e){
 
 void MainWindow::on_pushButtonDom_clicked()
 {
- QMediaPlayer* player = new QMediaPlayer;
+ player = new QMediaPlayer;
 
- player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/dom.wav"));
+ player->setMedia(QUrl::fromLocalFile("/home/rachelle/Documents/M1ALMA/IHM/M1ALMA-semestre2-SolfHelp/NoteMusique/SonNote/dom.wav"));
  player->setVolume(100);
  player->play();
-
- qDebug() << "J'ai cliqué sur un Do mineur ";
 }
 
 void MainWindow::on_pushButtonDoM_clicked(){
     QMediaPlayer* player = new QMediaPlayer;
 
-    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/doM.wav"));
+    player->setMedia(QUrl::fromLocalFile("/home/rachelle/Documents/M1ALMA/IHM/M1ALMA-semestre2-SolfHelp/NoteMusique/SonNote/doM.wav"));
     player->setVolume(100);
     player->play();
-
-    qDebug() << "J'ai cliqué sur un Do majeur ";
 }
 
 void MainWindow::on_pushButtonRem_clicked(){
     QMediaPlayer* player = new QMediaPlayer;
 
-    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/rem.wav"));
+    player->setMedia(QUrl::fromLocalFile("/home/rachelle/Documents/M1ALMA/IHM/M1ALMA-semestre2-SolfHelp/NoteMusique/SonNote/rem.wav"));
     player->setVolume(100);
     player->play();
 }
@@ -192,7 +188,7 @@ void MainWindow::on_pushButtonRem_clicked(){
 void MainWindow::on_pushButtonReM_clicked(){
     QMediaPlayer* player = new QMediaPlayer;
 
-    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/reM.wav"));
+    player->setMedia(QUrl::fromLocalFile("/home/rachelle/Documents/M1ALMA/IHM/M1ALMA-semestre2-SolfHelp/NoteMusique/SonNote/reM.wav"));
     player->setVolume(100);
     player->play();
 }
@@ -200,7 +196,7 @@ void MainWindow::on_pushButtonReM_clicked(){
 void MainWindow::on_pushButtonMim_clicked(){
     QMediaPlayer* player = new QMediaPlayer;
 
-    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/mim.wav"));
+    player->setMedia(QUrl::fromLocalFile("/home/rachelle/Documents/M1ALMA/IHM/M1ALMA-semestre2-SolfHelp/NoteMusique/SonNote/mim.wav"));
     player->setVolume(100);
     player->play();
 }
@@ -208,7 +204,7 @@ void MainWindow::on_pushButtonMim_clicked(){
 void MainWindow::on_pushButtonMiM_clicked(){
     QMediaPlayer* player = new QMediaPlayer;
 
-    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/miM.wav"));
+    player->setMedia(QUrl::fromLocalFile("/home/rachelle/Documents/M1ALMA/IHM/M1ALMA-semestre2-SolfHelp/NoteMusique/SonNote/miM.wav"));
     player->setVolume(100);
     player->play();
 }
@@ -216,7 +212,7 @@ void MainWindow::on_pushButtonMiM_clicked(){
 void MainWindow::on_pushButtonFam_clicked(){
     QMediaPlayer* player = new QMediaPlayer;
 
-    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/fam.wav"));
+    player->setMedia(QUrl::fromLocalFile("/home/rachelle/Documents/M1ALMA/IHM/M1ALMA-semestre2-SolfHelp/NoteMusique/SonNote/fam.wav"));
     player->setVolume(100);
     player->play();
 }
@@ -224,7 +220,7 @@ void MainWindow::on_pushButtonFam_clicked(){
 void MainWindow::on_pushButtonFaM_clicked(){
     QMediaPlayer* player = new QMediaPlayer;
 
-    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/faM.wav"));
+    player->setMedia(QUrl::fromLocalFile("/home/rachelle/Documents/M1ALMA/IHM/M1ALMA-semestre2-SolfHelp/NoteMusique/SonNote/faM.wav"));
     player->setVolume(100);
     player->play();
 }
@@ -232,7 +228,7 @@ void MainWindow::on_pushButtonFaM_clicked(){
 void MainWindow::on_pushButtonSolm_clicked(){
     QMediaPlayer* player = new QMediaPlayer;
 
-    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/solm.wav"));
+    player->setMedia(QUrl::fromLocalFile("/home/rachelle/Documents/M1ALMA/IHM/M1ALMA-semestre2-SolfHelp/NoteMusique/SonNote/solm.wav"));
     player->setVolume(100);
     player->play();
 }
@@ -240,7 +236,7 @@ void MainWindow::on_pushButtonSolm_clicked(){
 void MainWindow::on_pushButtonSolM_clicked(){
     QMediaPlayer* player = new QMediaPlayer;
 
-    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/solM.wav"));
+    player->setMedia(QUrl::fromLocalFile("/home/rachelle/Documents/M1ALMA/IHM/M1ALMA-semestre2-SolfHelp/NoteMusique/SonNote/solM.wav"));
     player->setVolume(100);
     player->play();
 }
@@ -248,7 +244,7 @@ void MainWindow::on_pushButtonSolM_clicked(){
 void MainWindow::on_pushButtonLam_clicked(){
     QMediaPlayer* player = new QMediaPlayer;
 
-    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/lam.wav"));
+    player->setMedia(QUrl::fromLocalFile("/home/rachelle/Documents/M1ALMA/IHM/M1ALMA-semestre2-SolfHelp/NoteMusique/SonNote/lam.wav"));
     player->setVolume(100);
     player->play();
 }
@@ -256,7 +252,7 @@ void MainWindow::on_pushButtonLam_clicked(){
 void MainWindow::on_pushButtonLaM_clicked(){
     QMediaPlayer* player = new QMediaPlayer;
 
-    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/laM.wav"));
+    player->setMedia(QUrl::fromLocalFile("/home/rachelle/Documents/M1ALMA/IHM/M1ALMA-semestre2-SolfHelp/NoteMusique/SonNote/laM.wav"));
     player->setVolume(100);
     player->play();
 }
@@ -264,7 +260,7 @@ void MainWindow::on_pushButtonLaM_clicked(){
 void MainWindow::on_pushButtonSim_clicked(){
     QMediaPlayer* player = new QMediaPlayer;
 
-    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/sim.wav"));
+    player->setMedia(QUrl::fromLocalFile("/home/rachelle/Documents/M1ALMA/IHM/M1ALMA-semestre2-SolfHelp/NoteMusique/SonNote/sim.wav"));
     player->setVolume(100);
     player->play();
 }
@@ -272,7 +268,7 @@ void MainWindow::on_pushButtonSim_clicked(){
 void MainWindow::on_pushButtonSiM_clicked(){
     QMediaPlayer* player = new QMediaPlayer;
 
-    player->setMedia(QUrl::fromLocalFile("/comptes/E15A389D/Documents/M1ALMA/Semestre 2/IHM/tp/NoteMusique/SonNote/siM.wav"));
+    player->setMedia(QUrl::fromLocalFile("/home/rachelle/Documents/M1ALMA/IHM/M1ALMA-semestre2-SolfHelp/NoteMusique/SonNote/siM.wav"));
     player->setVolume(100);
     player->play();
 }
