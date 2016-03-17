@@ -1,10 +1,7 @@
 <partition name="Demo1">
 	<note nom="do" hauteur="majeur"/>
 	<note nom="do" hauteur="mineur"/>
-
 	<note nom="re" hauteur="mineur"/>
-
 	<note nom="re" hauteur="majeur"/>
 	<note nom="mi" hauteur="mineur"/>
-
 </partition>

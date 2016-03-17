@@ -32,7 +32,7 @@ private:
 
     void chargerPartition(QString fichier);
 
-    void placerNote(QPainter &painter, qreal largeur, qreal hauteur, qreal xDebutLigne, qreal yDebutLigne, qreal espaceEntreLigne, QString note);
+    void placerNote(QPainter &painter, qreal largeur, qreal hauteur, qreal xDebutLigne, qreal yDebutLigne, qreal xDebutNote, qreal espaceEntreLigne, QString note);
 
     
 };

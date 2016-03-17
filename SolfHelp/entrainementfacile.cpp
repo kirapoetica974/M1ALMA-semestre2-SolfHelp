@@ -121,17 +121,18 @@ void EntrainementFacile::paintEvent(QPaintEvent* e){
         painter.drawLine(xDebutLigne,yDebutLigne+(espaceEntreLigne*i),longueurLigne,yDebutLigne+(espaceEntreLigne*i));
     }
 
-    placerNote(painter,largeur,hauteur,xDebutLigne,yDebutLigne,espaceEntreLigne,"do");
+    qreal xDebutNote = 300;
+    placerNote(painter,largeur,hauteur,xDebutLigne,yDebutLigne,xDebutNote,espaceEntreLigne,"do");
 
 }
 
-void EntrainementFacile::placerNote(QPainter &painter,qreal largeur, qreal hauteur, qreal xDebutLigne,qreal yDebutLigne, qreal espaceEntreLigne,QString note){
+void EntrainementFacile::placerNote(QPainter &painter,qreal largeur, qreal hauteur, qreal xDebutLigne,qreal yDebutLigne, qreal xDebutNote, qreal espaceEntreLigne,QString note){
     QRectF rectangle;
     if (note == "do") {
-        rectangle = QRectF(QPoint(largeur/2, yDebutLigne+5.5*espaceEntreLigne), QSize(espaceEntreLigne+(espaceEntreLigne/4), espaceEntreLigne));
-        qreal xl = largeur/2 - rectangle.width();
-        qreal xl2 = largeur/2 + rectangle.width();
-        painter.drawLine(xl,yDebutLigne+(espaceEntreLigne*5),xl2,yDebutLigne+(espaceEntreLigne*5));
+        rectangle = QRectF(QPoint(xDebutNote, yDebutLigne+5.5*espaceEntreLigne), QSize(espaceEntreLigne+(espaceEntreLigne/4), espaceEntreLigne));
+        qreal xl = xDebutNote - rectangle.width();
+        qreal xl2 = xDebutNote + (2*rectangle.width());
+        painter.drawLine(xl,yDebutLigne+(espaceEntreLigne*6),xl2,yDebutLigne+(espaceEntreLigne*6));
 
     } else {
     }
