@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<partition name=demo1>
+	<note>
+		<nom>do</nom>
+		<hauteur>majeur</hauteur>
+		<alteration></alteration>
+	</note>
+
+	<note>
+		<nom>re</nom>
+		<hauteur>majeur</hauteur>
+		<alteration></alteration>
+	</note>
+
+	<note>
+		<nom>mi</nom>
+		<hauteur>majeur</hauteur>
+		<alteration></alteration>
+	</note>
+
+	<note>
+		<nom>fa</nom>
+		<hauteur>majeur</hauteur>
+		<alteration></alteration>
+	</note>
+
+	<note>
+		<nom>sol</nom>
+		<hauteur>majeur</hauteur>
+		<alteration></alteration>
+	</note>
+
+	<note>
+		<nom>la</nom>
+		<hauteur>majeur</hauteur>
+		<alteration></alteration>
+	</note>
+
+	<note>
+		<nom>si</nom>
+		<hauteur>majeur</hauteur>
+		<alteration></alteration>
+	</note>	
+
+	<note>
+		<nom>do</nom>
+		<hauteur>mineur</hauteur>
+		<alteration></alteration>
+	</note>	
+
+	<note>
+		<nom>re</nom>
+		<hauteur>mineur</hauteur>
+		<alteration></alteration>
+	</note>
+
+	<note>
+		<nom>mi</nom>
+		<hauteur>mineur</hauteur>
+		<alteration></alteration>
+	</note>
+
+	<note>
+		<nom>fa</nom>
+		<hauteur>mineur</hauteur>
+		<alteration></alteration>
+	</note>
+
+	<note>
+		<nom>sol</nom>
+		<hauteur>mineur</hauteur>
+		<alteration></alteration>
+	</note>
+
+	<note>
+		<nom>la</nom>
+		<hauteur>mineur</hauteur>
+		<alteration></alteration>
+	</note>
+
+	<note>
+		<nom>si</nom>
+		<hauteur>mineur</hauteur>
+		<alteration></alteration>
+	</note>
+
+</partition>

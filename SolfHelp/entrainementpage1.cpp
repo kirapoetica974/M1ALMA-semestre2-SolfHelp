@@ -4,6 +4,7 @@
 EntrainementPage1::EntrainementPage1(QStackedWidget *p) :QWidget()
 {
     resize(600,500);
+    pages = p;
 
     //INITIALISATION DE CONSTANTES POUR LA DIMENSION DES BOUTONS
     // Largeur de la fenetre de l'application
@@ -28,7 +29,7 @@ EntrainementPage1::EntrainementPage1(QStackedWidget *p) :QWidget()
     connect(difficile, SIGNAL(clicked()), this, SLOT(doDifficile()));
 
     accueil = new QPushButton("Accueil",this);
-    accueil->setGeometry(largeur-((largeur*10)/100)-(largeur/10),(hauteur*0.05), (largeur*10)/100,(hauteur*10)/100);
+    accueil->setGeometry(520,5, 50,50);
 
     connect(accueil, SIGNAL(clicked()), this, SLOT(goAccueil()));
 }

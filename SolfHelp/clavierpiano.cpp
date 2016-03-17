@@ -1,6 +1,7 @@
 #include "clavierpiano.h"
 #include <QPalette>
 #include <QColor>
+#include <QSound>
 
 ClavierPiano::ClavierPiano(qreal xTouche, qreal yTouche, qreal largeurTouche, qreal hauteurTouche, QString *chemin, QWidget *widget) : QWidget()
 {
@@ -69,32 +70,87 @@ ClavierPiano::ClavierPiano(qreal xTouche, qreal yTouche, qreal largeurTouche, qr
     lamD->setGeometry((xTouche+(12*largeurTouche))+(0.6*largeurTouche), yTouche, largeurToucheNoire, hauteurToucheNoire);
 
 
+    // Modification des touches
+    do1->setFocusPolicy(Qt::NoFocus);
+    do1->setStyleSheet("background-color : white");
+    do2->setFocusPolicy(Qt::NoFocus);
+    do2->setStyleSheet("background-color : white");
+    re1->setFocusPolicy(Qt::NoFocus);
+    re1->setStyleSheet("background-color : white");
+    re2->setFocusPolicy(Qt::NoFocus);
+    re2->setStyleSheet("background-color : white");
+    mi1->setFocusPolicy(Qt::NoFocus);
+    mi1->setStyleSheet("background-color : white");
+    mi2->setFocusPolicy(Qt::NoFocus);
+    mi2->setStyleSheet("background-color : white");
+    fa1->setFocusPolicy(Qt::NoFocus);
+    fa1->setStyleSheet("background-color : white");
+    fa2->setFocusPolicy(Qt::NoFocus);
+    fa2->setStyleSheet("background-color : white");
+    sol1->setFocusPolicy(Qt::NoFocus);
+    sol1->setStyleSheet("background-color : white");
+    sol2->setFocusPolicy(Qt::NoFocus);
+    sol2->setStyleSheet("background-color : white");
+    la1->setFocusPolicy(Qt::NoFocus);
+    la1->setStyleSheet("background-color : white");
+    la2->setFocusPolicy(Qt::NoFocus);
+    la2->setStyleSheet("background-color : white");
+    si1->setFocusPolicy(Qt::NoFocus);
+    si1->setStyleSheet("background-color : white");
+    si2->setFocusPolicy(Qt::NoFocus);
+    si2->setStyleSheet("background-color : white");
+    domD->setFocusPolicy(Qt::NoFocus);
+    domD->setStyleSheet("background-color : black");
+    doMD->setFocusPolicy(Qt::NoFocus);
+    doMD->setStyleSheet("background-color : black");
+    remD->setFocusPolicy(Qt::NoFocus);
+    remD->setStyleSheet("background-color : black");
+    reMD->setFocusPolicy(Qt::NoFocus);
+    reMD->setStyleSheet("background-color : black");
+    famD->setFocusPolicy(Qt::NoFocus);
+    famD->setStyleSheet("background-color : black");
+    faMD->setFocusPolicy(Qt::NoFocus);
+    faMD->setStyleSheet("background-color : black");
+    solmD->setFocusPolicy(Qt::NoFocus);
+    solmD->setStyleSheet("background-color : black");
+    solMD->setFocusPolicy(Qt::NoFocus);
+    solMD->setStyleSheet("background-color : black");
+    lamD->setFocusPolicy(Qt::NoFocus);
+    lamD->setStyleSheet("background-color : black");
+    laMD->setFocusPolicy(Qt::NoFocus);
+    laMD->setStyleSheet("background-color : black");
 
-    connect(do1, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonDoM_clicked()));
-    connect(do2, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonDom_clicked()));
-    connect(re1, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonReM_clicked()));
-    connect(re2, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonRem_clicked()));
-    connect(mi1, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonMiM_clicked()));
-    connect(mi2, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonMim_clicked()));
-    connect(fa1, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonFaM_clicked()));
-    connect(fa2, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonFam_clicked()));
-    connect(sol1, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonSolM_clicked()));
-    connect(sol2, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonSolm_clicked()));
-    connect(la1, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonLaM_clicked()));
-    connect(la2, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonLam_clicked()));
-    connect(si1, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonSiM_clicked()));
-    connect(si2, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonSim_clicked()));
 
-    connect(domD, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonDomD_clicked()));
-    connect(doMD, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonDoMD_clicked()));
-    connect(remD, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonRemD_clicked()));
-    connect(reMD, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonReMD_clicked()));
-    connect(famD, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonFamD_clicked()));
-    connect(faMD, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonFaMD_clicked()));
-    connect(solmD, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonSolmD_clicked()));
-    connect(solMD, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonSolMD_clicked()));
-    connect(lamD, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonLamD_clicked()));
-    connect(laMD, SIGNAL(clicked(bool)),this, SLOT(on_pushButtonLaMD_clicked()));
+
+
+
+
+
+    connect(do1, SIGNAL(pressed()),this, SLOT(on_pushButtonDoM_clicked()));
+    connect(do2, SIGNAL(pressed()),this, SLOT(on_pushButtonDom_clicked()));
+    connect(re1, SIGNAL(pressed()),this, SLOT(on_pushButtonReM_clicked()));
+    connect(re2, SIGNAL(pressed()),this, SLOT(on_pushButtonRem_clicked()));
+    connect(mi1, SIGNAL(pressed()),this, SLOT(on_pushButtonMiM_clicked()));
+    connect(mi2, SIGNAL(pressed()),this, SLOT(on_pushButtonMim_clicked()));
+    connect(fa1, SIGNAL(pressed()),this, SLOT(on_pushButtonFaM_clicked()));
+    connect(fa2, SIGNAL(pressed()),this, SLOT(on_pushButtonFam_clicked()));
+    connect(sol1, SIGNAL(pressed()),this, SLOT(on_pushButtonSolM_clicked()));
+    connect(sol2, SIGNAL(pressed()),this, SLOT(on_pushButtonSolm_clicked()));
+    connect(la1, SIGNAL(pressed()),this, SLOT(on_pushButtonLaM_clicked()));
+    connect(la2, SIGNAL(pressed()),this, SLOT(on_pushButtonLam_clicked()));
+    connect(si1, SIGNAL(pressed()),this, SLOT(on_pushButtonSiM_clicked()));
+    connect(si2, SIGNAL(pressed()),this, SLOT(on_pushButtonSim_clicked()));
+
+    connect(domD, SIGNAL(pressed()),this, SLOT(on_pushButtonDomD_clicked()));
+    connect(doMD, SIGNAL(pressed()),this, SLOT(on_pushButtonDoMD_clicked()));
+    connect(remD, SIGNAL(pressed()),this, SLOT(on_pushButtonRemD_clicked()));
+    connect(reMD, SIGNAL(pressed()),this, SLOT(on_pushButtonReMD_clicked()));
+    connect(famD, SIGNAL(pressed()),this, SLOT(on_pushButtonFamD_clicked()));
+    connect(faMD, SIGNAL(pressed()),this, SLOT(on_pushButtonFaMD_clicked()));
+    connect(solmD, SIGNAL(pressed()),this, SLOT(on_pushButtonSolmD_clicked()));
+    connect(solMD, SIGNAL(pressed()),this, SLOT(on_pushButtonSolMD_clicked()));
+    connect(lamD, SIGNAL(pressed()),this, SLOT(on_pushButtonLamD_clicked()));
+    connect(laMD, SIGNAL(pressed()),this, SLOT(on_pushButtonLaMD_clicked()));
 
 }
 
@@ -104,243 +160,99 @@ void ClavierPiano::clic(){
 
 void ClavierPiano::on_pushButtonDom_clicked()
 {
-    QString *chaine = new QString();
-    chaine->append(chem);
- player = new QMediaPlayer;
-
- player->setMedia(QUrl::fromLocalFile(chaine->append("dom.wav")));
- player->setVolume(100);
- player->play();
+    QSound::play("../SonNote/dom.wav");
 }
 
 void ClavierPiano::on_pushButtonDoM_clicked(){
-    QString *chaine = new QString();
-    chaine->append(chem);
-    player = new QMediaPlayer;
-
-    player->setMedia(QUrl::fromLocalFile(chaine->append("doM.wav")));
-    player->setVolume(100);
-    player->play();
+    QSound::play("../SonNote/doM.wav");
 }
 
 void ClavierPiano::on_pushButtonRem_clicked(){
-    QString *chaine = new QString();
-    chaine->append(chem);
-    player = new QMediaPlayer;
-
-    player->setMedia(QUrl::fromLocalFile(chaine->append("rem.wav")));
-    player->setVolume(100);
-    player->play();
+    QSound::play("../SonNote/rem.wav");
 }
 
 void ClavierPiano::on_pushButtonReM_clicked(){
-    QString *chaine = new QString();
-    chaine->append(chem);
-    player = new QMediaPlayer;
-
-    player->setMedia(QUrl::fromLocalFile(chaine->append("reM.wav")));
-    player->setVolume(100);
-    player->play();
+   QSound::play("../SonNote/reM.wav");
 }
 
 void ClavierPiano::on_pushButtonMim_clicked(){
-    QString *chaine = new QString();
-    chaine->append(chem);
-    player = new QMediaPlayer;
-
-    player->setMedia(QUrl::fromLocalFile(chaine->append("mim.wav")));
-    player->setVolume(100);
-    player->play();
+    QSound::play("../SonNote/mim.wav");
 }
 
 void ClavierPiano::on_pushButtonMiM_clicked(){
-    QString *chaine = new QString();
-    chaine->append(chem);
-    player = new QMediaPlayer;
-
-    player->setMedia(QUrl::fromLocalFile(chaine->append("miM.wav")));
-    player->setVolume(100);
-    player->play();
+    QSound::play("../SonNote/miM.wav");
 }
 
 void ClavierPiano::on_pushButtonFam_clicked(){
-    QString *chaine = new QString();
-    chaine->append(chem);
-    player = new QMediaPlayer;
-
-    player->setMedia(QUrl::fromLocalFile(chaine->append("fam.wav")));
-    player->setVolume(100);
-    player->play();
+    QSound::play("../SonNote/fam.wav");
 }
 
 void ClavierPiano::on_pushButtonFaM_clicked(){
-    QString *chaine = new QString();
-    chaine->append(chem);
-    player = new QMediaPlayer;
-
-    player->setMedia(QUrl::fromLocalFile(chaine->append("faM.wav")));
-    player->setVolume(100);
-    player->play();
+    QSound::play("../SonNote/faM.wav");
 }
 
 void ClavierPiano::on_pushButtonSolm_clicked(){
-    QString *chaine = new QString();
-    chaine->append(chem);
-    player = new QMediaPlayer;
-
-    player->setMedia(QUrl::fromLocalFile(chaine->append("solm.wav")));
-    player->setVolume(100);
-    player->play();
+    QSound::play("../SonNote/solm.wav");
 }
 
 void ClavierPiano::on_pushButtonSolM_clicked(){
-    QString *chaine = new QString();
-    chaine->append(chem);
-    player = new QMediaPlayer;
-
-    player->setMedia(QUrl::fromLocalFile(chaine->append("solM.wav")));
-    player->setVolume(100);
-    player->play();
+    QSound::play("../SonNote/solM.wav");
 }
 
 void ClavierPiano::on_pushButtonLam_clicked(){
-    QString *chaine = new QString();
-    chaine->append(chem);
-    player = new QMediaPlayer;
-
-    player->setMedia(QUrl::fromLocalFile(chaine->append("lam.wav")));
-    player->setVolume(100);
-    player->play();
+    QSound::play("../SonNote/lam.wav");
 }
 
 void ClavierPiano::on_pushButtonLaM_clicked(){
-    QString *chaine = new QString();
-    chaine->append(chem);
-    player = new QMediaPlayer;
-
-    player->setMedia(QUrl::fromLocalFile(chaine->append("laM.wav")));
-    player->setVolume(100);
-    player->play();
+    QSound::play("../SonNote/laM.wav");
 }
 
 void ClavierPiano::on_pushButtonSim_clicked(){
-    QString *chaine = new QString();
-    chaine->append(chem);
-    player = new QMediaPlayer;
-
-    player->setMedia(QUrl::fromLocalFile(chaine->append("sim.wav")));
-    player->setVolume(100);
-    player->play();
+    QSound::play("../SonNote/sim.wav");
 }
 
 void ClavierPiano::on_pushButtonSiM_clicked(){
-    QString *chaine = new QString();
-    chaine->append(chem);
-    player = new QMediaPlayer;
-
-    player->setMedia(QUrl::fromLocalFile(chaine->append("siM.wav")));
-    player->setVolume(100);
-    player->play();
+    QSound::play("../SonNote/siM.wav");
 }
 
 void ClavierPiano::on_pushButtonDomD_clicked(){
-    QString *chaine = new QString();
-    chaine->append(chem);
-    player = new QMediaPlayer;
-
-    player->setMedia(QUrl::fromLocalFile(chaine->append("domD.wav")));
-    player->setVolume(100);
-    player->play();
+    QSound::play("../SonNote/domD.wav");
 }
 
 void ClavierPiano::on_pushButtonDoMD_clicked(){
-    QString *chaine = new QString();
-    chaine->append(chem);
-    player = new QMediaPlayer;
-
-    player->setMedia(QUrl::fromLocalFile(chaine->append("doMD.wav")));
-    player->setVolume(100);
-    player->play();
+    QSound::play("../SonNote/doMD.wav");
 }
 
 void ClavierPiano::on_pushButtonRemD_clicked(){
-    QString *chaine = new QString();
-    chaine->append(chem);
-    player = new QMediaPlayer;
-
-    player->setMedia(QUrl::fromLocalFile(chaine->append("remD.wav")));
-    player->setVolume(100);
-    player->play();
+    QSound::play("../SonNote/remD.wav");
 }
 
 void ClavierPiano::on_pushButtonReMD_clicked(){
-    QString *chaine = new QString();
-    chaine->append(chem);
-    player = new QMediaPlayer;
-
-    player->setMedia(QUrl::fromLocalFile(chaine->append("reMD.wav")));
-    player->setVolume(100);
-    player->play();
+    QSound::play("../SonNote/reMD.wav");
 }
 
 void ClavierPiano::on_pushButtonFamD_clicked(){
-    QString *chaine = new QString();
-    chaine->append(chem);
-    player = new QMediaPlayer;
-
-    player->setMedia(QUrl::fromLocalFile(chaine->append("famD.wav")));
-    player->setVolume(100);
-    player->play();
+    QSound::play("../SonNote/famD.wav");
 }
 
 void ClavierPiano::on_pushButtonFaMD_clicked(){
-    QString *chaine = new QString();
-    chaine->append(chem);
-    player = new QMediaPlayer;
-
-    player->setMedia(QUrl::fromLocalFile(chaine->append("faMD.wav")));
-    player->setVolume(100);
-    player->play();
+    QSound::play("../SonNote/faMD.wav");
 }
 
 void ClavierPiano::on_pushButtonSolmD_clicked(){
-    QString *chaine = new QString();
-    chaine->append(chem);
-    player = new QMediaPlayer;
-
-    player->setMedia(QUrl::fromLocalFile(chaine->append("solmD.wav")));
-    player->setVolume(100);
-    player->play();
+    QSound::play("../SonNote/solmD.wav");
 }
 
 void ClavierPiano::on_pushButtonSolMD_clicked(){
-    QString *chaine = new QString();
-    chaine->append(chem);
-    player = new QMediaPlayer;
-
-    player->setMedia(QUrl::fromLocalFile(chaine->append("solMD.wav")));
-    player->setVolume(100);
-    player->play();
+    QSound::play("../SonNote/solMD.wav");
 }
 
 void ClavierPiano::on_pushButtonLamD_clicked(){
-    QString *chaine = new QString();
-    chaine->append(chem);
-    player = new QMediaPlayer;
-
-    player->setMedia(QUrl::fromLocalFile(chaine->append("lamD.wav")));
-    player->setVolume(100);
-    player->play();
+    QSound::play("../SonNote/lamD.wav");
 }
 
 void ClavierPiano::on_pushButtonLaMD_clicked(){
-    QString *chaine = new QString();
-    chaine->append(chem);
-    player = new QMediaPlayer;
-
-    player->setMedia(QUrl::fromLocalFile(chaine->append("laMD.wav")));
-    player->setVolume(100);
-    player->play();
+    QSound::play("../SonNote/laMD.wav");
 }
 
 

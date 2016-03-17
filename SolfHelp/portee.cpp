@@ -4,6 +4,11 @@
 Portee::Portee(QWidget *widget) :QWidget()
 {
 
+    w=widget;
+}
+
+
+void Portee::paintEvent(QPaintEvent* e){
     // Largeur de la fenetre de l'application
     qreal largeur = size().width();
 
@@ -20,9 +25,8 @@ Portee::Portee(QWidget *widget) :QWidget()
     // longueur de la ligne en fonction de l'ecran
     qreal longueurLigne = largeur-((largeur*10)/100);
     qreal espaceEntreLigne = (largeur*3)/100;
-    QPainter painter(widget);
+    QPainter painter(this);
     for (int i = 1; i < 6; i++) {
         painter.drawLine(xDebutLigne,yDebutLigne+(espaceEntreLigne*i),longueurLigne,yDebutLigne+(espaceEntreLigne*i));
     }
 }
-

@@ -5,12 +5,11 @@
 class Note
 {
 public:
-    Note(QString *nom, QString *hauteur, QString *alteration);
+    Note(QString nom, QString hauteur);
 
 private:
-    QString *nom;
-    QString *hauteur;
-    QString *alteration;
+    QString nom;
+    QString hauteur;
 };
 
 #endif // NOTE_H

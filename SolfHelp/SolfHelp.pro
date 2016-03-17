@@ -6,6 +6,8 @@
 
 QT       += core gui
 QT       += multimedia
+QT       += svg
+QT       += xml
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -31,3 +33,6 @@ HEADERS  += fenetre.h \
     entrainementfacile.h \
     note.h \
     portee.h
+
+RESOURCES += \
+    image.qrc

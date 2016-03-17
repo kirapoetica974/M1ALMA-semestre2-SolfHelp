@@ -16,10 +16,10 @@ JeuLibre::JeuLibre(QStackedWidget *p) : QWidget()
     // hauteur de la fenetre de l'application
     qreal hauteur = size().height();
 
-    qreal largeurDeTouche = (largeur - (2*(largeur/10)))/14;
-    qreal hauteurDeTouche = (hauteur*30)/100;
-    qreal xTouche = largeur/10;
-    qreal yTouche = hauteur/2;
+    qreal largeurDeTouche = (largeur - 60)/14;
+    qreal hauteurDeTouche = (hauteur*40)/100;
+    qreal xTouche = 20;
+    qreal yTouche = hauteur/3;
     QString *chemin = new QString();
     chemin->append("/home/rachelle/Documents/M1ALMA/IHM/M1ALMA-semestre2-SolfHelp/NoteMusique/SonNote/");
 
@@ -28,7 +28,7 @@ JeuLibre::JeuLibre(QStackedWidget *p) : QWidget()
     clavier = new ClavierPiano(xTouche,yTouche,largeurDeTouche,hauteurDeTouche,chemin, this);
 
     accueil = new QPushButton("Accueil",this);
-    accueil->setGeometry(largeur-((largeur*10)/100)-(largeur/10),(hauteur*0.05), (largeur*10)/100,(hauteur*10)/100);
+    accueil->setGeometry(520,5, 50,50);
 
     connect(accueil, SIGNAL(clicked()), this, SLOT(goAccueil()));
 }

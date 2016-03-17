@@ -42,6 +42,10 @@ public:
 signals:
     
 public slots:
+
+private:
+     void paintEvent(QPaintEvent* e);
+     QWidget *w;
     
 };
 
