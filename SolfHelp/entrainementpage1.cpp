@@ -4,7 +4,7 @@
 
 EntrainementPage1::EntrainementPage1(QStackedWidget *p) :QWidget()
 {
-    resize(600,500);
+    this->resize(600,500);
     pages = p;
 
 
@@ -16,9 +16,9 @@ EntrainementPage1::EntrainementPage1(QStackedWidget *p) :QWidget()
     // hauteur de la fenetre de l'application
     qreal hauteur = size().height();
 
-    qreal xBouton = (largeur*20)/100;
-    qreal yBouton = (largeur*30)/100;
-    qreal largeurBouton = largeur - 2*(xBouton);
+    qreal xBouton = 100;
+    qreal yBouton = 150;
+    qreal largeurBouton = largeur - 220;
     qreal hauteurBouton = (hauteur*10)/100;
 
     //liste déroulante correspondant au choix de la partition
@@ -28,17 +28,9 @@ EntrainementPage1::EntrainementPage1(QStackedWidget *p) :QWidget()
     listePartition->addItem("Demo2");
     listePartition->addItem("Demo3");
     listePartition->setCurrentIndex(0);
+
+    listePartition->setGeometry(xBouton, yBouton, largeurBouton, hauteurBouton);
     connect(listePartition, SIGNAL(activated(int)),this,SLOT(choixPartition()));
-
-
-
-//    //Lecture du fichier
-//    fichierTemporaire.open(QIODevice::ReadOnly | QIODevice::Text);
-//    QTextStream flux(fichierTemporaire);
-//    QString tout = flux.readAll();
-//    qDebug() << tout;
-
-
 
 
 
@@ -47,8 +39,8 @@ EntrainementPage1::EntrainementPage1(QStackedWidget *p) :QWidget()
     facile = new QPushButton("Facile", this);
     difficile =new QPushButton("Difficile", this);
 
-    facile->setGeometry(xBouton, yBouton, largeurBouton, hauteurBouton);
-    difficile->setGeometry(xBouton, yBouton+hauteurBouton, largeurBouton, hauteurBouton);
+    facile->setGeometry(xBouton, yBouton+(2*hauteurBouton), largeurBouton, hauteurBouton);
+    difficile->setGeometry(xBouton, yBouton+(3*hauteurBouton), largeurBouton, hauteurBouton);
 
     facile->setEnabled(false);
     difficile->setEnabled(false);

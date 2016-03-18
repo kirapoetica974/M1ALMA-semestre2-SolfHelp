@@ -7,6 +7,9 @@
 #include <clavierpiano.h>
 #include <QVector>
 #include <note.h>
+#include <QGraphicsScene>
+#include <QLabel>
+#include <QTextEdit>
 
 class EntrainementFacile : public QWidget
 {
@@ -19,15 +22,37 @@ signals:
 public slots:
     void goAccueil();
 
+
+    void appuiDo1();
+    void appuiDo2();
+    void appuiRe1();
+    void appuiRe2();
+    void appuiMi1();
+    void appuiMi2();
+    void appuiFa1();
+    void appuiFa2();
+    void appuiSol1();
+    void appuiSol2();
+    void appuiLa1();
+    void appuiLa2();
+    void appuiSi1();
+    void appuiSi2();
+
+    void commencer();
+
+
 private:
     QStackedWidget *pages;
     Portee *portee;
 
     ClavierPiano *piano;
 
+    QTextEdit *labelReponse;
     QPushButton *accueil;
+    QPushButton *go;
     QVector<Note*> *tabNotes;
     QVector<Note*> *tabReponse;
+    bool enJeu;
 
     QString nomPartition;
 
@@ -37,8 +62,7 @@ private:
 
     void placerNote(QPainter &painter, qreal largeur, qreal hauteur, qreal xDebutLigne, qreal yDebutLigne, qreal xDebutNote, qreal espaceEntreLigne, QString note, QString hauteurN);
 
-    void refresh();
-    
+    void deconnectionDesTouches();
 };
 
 #endif // ENTRAINEMENTFACILE_H

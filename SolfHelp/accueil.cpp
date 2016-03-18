@@ -13,10 +13,11 @@ Accueil::Accueil(QStackedWidget *p) : QWidget()
     // hauteur de la fenetre de l'application
     qreal hauteur = size().height();
 
-    qreal xBouton = (largeur*20)/100;
+    qreal xBouton = 100;
     qreal yBouton = (largeur*30)/100;
-    qreal largeurBouton = largeur - 2*(xBouton);
+    qreal largeurBouton = largeur - 220;
     qreal hauteurBouton = (hauteur*10)/100;
+
 
 
     // On récupère le tableau de pages

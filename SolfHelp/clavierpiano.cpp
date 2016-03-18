@@ -99,9 +99,9 @@ ClavierPiano::ClavierPiano(qreal xTouche, qreal yTouche, qreal largeurTouche, qr
     si2->setFocusPolicy(Qt::NoFocus);
     si2->setStyleSheet("background-color : white");
     domD->setFocusPolicy(Qt::NoFocus);
-    domD->setStyleSheet("background-color : black");
+    domD->setStyleSheet("background-color : green");
     doMD->setFocusPolicy(Qt::NoFocus);
-    doMD->setStyleSheet("background-color : black");
+    doMD->setStyleSheet("background-color : green");
     remD->setFocusPolicy(Qt::NoFocus);
     remD->setStyleSheet("background-color : black");
     reMD->setFocusPolicy(Qt::NoFocus);

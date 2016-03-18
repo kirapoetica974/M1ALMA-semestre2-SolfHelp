@@ -23,7 +23,8 @@ SOURCES += main.cpp\
     entrainementpage1.cpp \
     entrainementfacile.cpp \
     note.cpp \
-    portee.cpp
+    portee.cpp \
+    placenote.cpp
 
 HEADERS  += fenetre.h \
     accueil.h \
@@ -32,7 +33,8 @@ HEADERS  += fenetre.h \
     entrainementpage1.h \
     entrainementfacile.h \
     note.h \
-    portee.h
+    portee.h \
+    placenote.h
 
 RESOURCES += \
     image.qrc
