@@ -1,6 +1,7 @@
 #include "jeulibre.h"
 #include <QString>
 #include <iostream>
+#include <QPixmap>
 
 JeuLibre::JeuLibre(QStackedWidget *p) : QWidget()
 {
@@ -27,8 +28,17 @@ JeuLibre::JeuLibre(QStackedWidget *p) : QWidget()
     // On insère le clavier
     clavier = new ClavierPiano(xTouche,yTouche,largeurDeTouche,hauteurDeTouche,chemin, this);
 
+    QPixmap pix(":/img/img/b_accueil.gif");
+    QIcon buttonIcon(pix);
     accueil = new QPushButton("Accueil",this);
+    accueil->setIcon(buttonIcon);
+
     accueil->setGeometry(520,5, 50,50);
+    accueil->setIconSize(accueil->size());
+    accueil->setText("");
+    accueil->setStyleSheet("border:none");
+    accueil->setFocusPolicy(Qt::NoFocus);
+
 
     connect(accueil, SIGNAL(clicked()), this, SLOT(goAccueil()));
 }

@@ -27,13 +27,17 @@ private:
 
     QPushButton *accueil;
     QVector<Note*> *tabNotes;
+    QVector<Note*> *tabReponse;
+
+    QString nomPartition;
 
     void paintEvent(QPaintEvent* e);
 
     void chargerPartition(QString fichier);
 
-    void placerNote(QPainter &painter, qreal largeur, qreal hauteur, qreal xDebutLigne, qreal yDebutLigne, qreal xDebutNote, qreal espaceEntreLigne, QString note);
+    void placerNote(QPainter &painter, qreal largeur, qreal hauteur, qreal xDebutLigne, qreal yDebutLigne, qreal xDebutNote, qreal espaceEntreLigne, QString note, QString hauteurN);
 
+    void refresh();
     
 };
 

@@ -7,9 +7,11 @@ class Note
 public:
     Note(QString nom, QString hauteur);
 
-private:
     QString nom;
     QString hauteur;
+
+private:
+
 };
 
 #endif // NOTE_H

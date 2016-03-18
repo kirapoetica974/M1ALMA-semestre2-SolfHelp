@@ -22,6 +22,8 @@ private:
     JeuLibre *jeuLibre;
     EntrainementPage1 *ent1;
     EntrainementFacile *entFacile;
+
+    QString choixPartition;
 };
 
 #endif // FENETRE_H

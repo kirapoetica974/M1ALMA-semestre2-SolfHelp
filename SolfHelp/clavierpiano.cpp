@@ -53,7 +53,6 @@ ClavierPiano::ClavierPiano(qreal xTouche, qreal yTouche, qreal largeurTouche, qr
     si2->setGeometry(xTouche+(13*largeurTouche), yTouche, largeurTouche, hauteurTouche);
 
 
-
     qreal largeurToucheNoire = 0.8*largeurTouche;
     qreal hauteurToucheNoire = 0.6*hauteurTouche;
 

@@ -1,9 +1,8 @@
 <partition name="Demo1">
-	<note nom="sol" hauteur="majeur"/>
-	<note nom="la" hauteur="majeur"/>
-	<note nom="si" hauteur="majeur"/>
+	<note nom="do" hauteur="majeur"/>
 	<note nom="do" hauteur="mineur"/>
 	<note nom="re" hauteur="mineur"/>
+	<note nom="re" hauteur="majeur"/>
 	<note nom="mi" hauteur="mineur"/>
-	<note nom="fa" hauteur="mineur"/>
+	<note nom="mi" hauteur="majeur"/>
 </partition>
