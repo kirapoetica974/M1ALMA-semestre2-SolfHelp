@@ -17,7 +17,7 @@ EntrainementPage1::EntrainementPage1(QStackedWidget *p) :QWidget()
     qreal hauteur = size().height();
 
     qreal xBouton = 100;
-    qreal yBouton = 150;
+    qreal yBouton = (largeur*30)/100;
     qreal largeurBouton = largeur - 220;
     qreal hauteurBouton = (hauteur*10)/100;
 

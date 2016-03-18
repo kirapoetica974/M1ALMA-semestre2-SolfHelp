@@ -80,7 +80,7 @@ EntrainementFacile::EntrainementFacile(QStackedWidget *p) : QWidget()
 
     // Ajout du label ou sera écrit les réponses
     labelReponse = new QTextEdit(this);
-    labelReponse->setGeometry(10,170,largeur-15,60);
+    labelReponse->setGeometry(10,175,largeur-20,60);
     labelReponse->setVisible(false);
     labelReponse->setEnabled(false);
 
@@ -89,7 +89,10 @@ EntrainementFacile::EntrainementFacile(QStackedWidget *p) : QWidget()
     QSvgWidget *cleSol = new QSvgWidget(":/img/G-clef.svg", this);
     cleSol->setGeometry(70,56,60,120);
 
+
+    //Ajout du bouton commencer
     go = new QPushButton("Commencer",this);
+    go->setGeometry(250, 0, 100, 50);
     connect(go,SIGNAL(pressed()),this,SLOT(commencer()));
 }
 
@@ -211,23 +214,25 @@ void EntrainementFacile::appuiSol2(){
 void EntrainementFacile::appuiLa1(){
     Note *note = new Note("la","majeur");
     tabReponse->append(note);
-    qDebug() << "J'ai tapé sur un si";
+    qDebug() << "J'ai tapé sur un la";
 }
 
 void EntrainementFacile::appuiLa2(){
     Note *note = new Note("la","mineur");
     tabReponse->append(note);
-    qDebug() << "J'ai tapé sur un si";
+    qDebug() << "J'ai tapé sur un la";
 }
 
 void EntrainementFacile::appuiSi1(){
     Note *note = new Note("si","majeur");
     tabReponse->append(note);
+    qDebug() << "J'ai tapé sur un si";
 }
 
 void EntrainementFacile::appuiSi2(){
     Note *note = new Note("si","mineur");
     tabReponse->append(note);
+    qDebug() << "J'ai tapé sur un si";
 }
 
 void EntrainementFacile::goAccueil(){

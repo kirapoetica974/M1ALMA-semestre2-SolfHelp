@@ -54,7 +54,7 @@ ClavierPiano::ClavierPiano(qreal xTouche, qreal yTouche, qreal largeurTouche, qr
 
 
     qreal largeurToucheNoire = 0.8*largeurTouche;
-    qreal hauteurToucheNoire = 0.6*hauteurTouche;
+    qreal hauteurToucheNoire = 0.45*hauteurTouche;
 
     // Placement des altérations
     doMD->setGeometry(xTouche+(0.6*largeurTouche),yTouche,largeurToucheNoire, hauteurToucheNoire);
@@ -67,6 +67,21 @@ ClavierPiano::ClavierPiano(qreal xTouche, qreal yTouche, qreal largeurTouche, qr
     famD->setGeometry((xTouche+(10*largeurTouche))+(0.6*largeurTouche), yTouche, largeurToucheNoire, hauteurToucheNoire);
     solmD->setGeometry((xTouche+(11*largeurTouche))+(0.6*largeurTouche), yTouche, largeurToucheNoire, hauteurToucheNoire);
     lamD->setGeometry((xTouche+(12*largeurTouche))+(0.6*largeurTouche), yTouche, largeurToucheNoire, hauteurToucheNoire);
+
+    do1->setShortcut((tr("a")));
+    re1->setShortcut((tr("z")));
+    mi1->setShortcut((tr("e")));
+    fa1->setShortcut((tr("r")));
+    sol1->setShortcut((tr("t")));
+    la1->setShortcut((tr("y")));
+    si1->setShortcut((tr("u")));
+    do2->setShortcut((tr("q")));
+    re2->setShortcut((tr("s")));
+    mi2->setShortcut((tr("d")));
+    fa2->setShortcut((tr("f")));
+    sol2->setShortcut((tr("g")));
+    la2->setShortcut((tr("h")));
+    si2->setShortcut((tr("j")));
 
 
     // Modification des touches
@@ -99,9 +114,9 @@ ClavierPiano::ClavierPiano(qreal xTouche, qreal yTouche, qreal largeurTouche, qr
     si2->setFocusPolicy(Qt::NoFocus);
     si2->setStyleSheet("background-color : white");
     domD->setFocusPolicy(Qt::NoFocus);
-    domD->setStyleSheet("background-color : green");
+    domD->setStyleSheet("background-color : black");
     doMD->setFocusPolicy(Qt::NoFocus);
-    doMD->setStyleSheet("background-color : green");
+    doMD->setStyleSheet("background-color : black");
     remD->setFocusPolicy(Qt::NoFocus);
     remD->setStyleSheet("background-color : black");
     reMD->setFocusPolicy(Qt::NoFocus);
