@@ -12,15 +12,16 @@
 
 EntrainementFacile::EntrainementFacile(QStackedWidget *p) : QWidget()
 {
+
     resize(600,500);
-    if(this->isEnabled()){
-        qDebug()<<"fenetre active";
-    }
     pages = p;
     portee = new Portee(this);
 
+    // Initialisation des tableau de notes
     tabNotes = new QVector<Note*>();
     tabReponse = new QVector<Note*>();
+
+    //La valiable enJeu sera à vrai quand l'utilisateur aura cliqué sur "commencer"
     enJeu = false;
 
 
@@ -35,10 +36,9 @@ EntrainementFacile::EntrainementFacile(QStackedWidget *p) : QWidget()
     qreal xTouche = 20;
     qreal yTouche = hauteur/2;
 
+
+    // Insertion du piano avec les touches non cliquables
     QString *chemin = new QString();
-
-
-    // Insertion du piano
     piano = new ClavierPiano(xTouche,yTouche,largeurDeTouche,hauteurDeTouche,chemin, this);
     piano->setEnabled(false);
     piano->do1->setEnabled(false);
@@ -66,6 +66,7 @@ EntrainementFacile::EntrainementFacile(QStackedWidget *p) : QWidget()
     piano->si1->setEnabled(false);
     piano->si2->setEnabled(false);
 
+
     // Ajout du bouton d'accueil
     QPixmap pix(":/img/img/b_accueil.gif");
     QIcon buttonIcon(pix);
@@ -78,7 +79,8 @@ EntrainementFacile::EntrainementFacile(QStackedWidget *p) : QWidget()
     accueil->setFocusPolicy(Qt::NoFocus);
     connect(accueil, SIGNAL(clicked()), this, SLOT(goAccueil()));
 
-    // Ajout du label ou sera écrit les réponses
+
+    // Ajout du label ou sera écrit les réponses (il sera invisible jusqu'à la fin)
     labelReponse = new QTextEdit(this);
     labelReponse->setGeometry(10,175,largeur-20,60);
     labelReponse->setVisible(false);
@@ -92,17 +94,28 @@ EntrainementFacile::EntrainementFacile(QStackedWidget *p) : QWidget()
 
     //Ajout du bouton commencer
     go = new QPushButton("Commencer",this);
-    go->setGeometry(250, 0, 100, 50);
+    go->setGeometry(250, 0, 100, 40);
     connect(go,SIGNAL(pressed()),this,SLOT(commencer()));
 }
 
 void EntrainementFacile::commencer(){
     labelReponse->setVisible(false);
+    tabNotes = new QVector<Note*>();
+    tabReponse = new QVector<Note*>();
+    deconnectionDesTouches();
+
+    // Le bouton commencer devient non cliquable
     go->setEnabled(false);
+
+    //le jeu ayant commencé, la variable enJeu est a true
     enJeu = true;
-    qDebug() << "En jeu";
+    qDebug() << "Partie commencée !!";
+
+    // On charge le fichier de partition dans le tableau prévu à cet effet
     chargerPartition(nomPartition);
 
+
+    // Les touches du clavier deviennt donc cliquables
     piano->setEnabled(true);
     piano->do1->setEnabled(true);
     piano->do2->setEnabled(true);
@@ -129,6 +142,7 @@ void EntrainementFacile::commencer(){
     piano->si1->setEnabled(true);
     piano->si2->setEnabled(true);
 
+    // Connection entre les touches et leur action
     connect(piano->do1,SIGNAL(clicked()),this,SLOT(appuiDo1()));
     connect(piano->do2,SIGNAL(clicked()),this,SLOT(appuiDo2()));
     connect(piano->re1,SIGNAL(clicked()),this,SLOT(appuiRe1()));
@@ -143,9 +157,8 @@ void EntrainementFacile::commencer(){
     connect(piano->la2,SIGNAL(clicked()),this,SLOT(appuiLa2()));
     connect(piano->si1,SIGNAL(clicked()),this,SLOT(appuiSi1()));
     connect(piano->si2,SIGNAL(clicked()),this,SLOT(appuiSi2()));
-
-
 }
+
 
 void EntrainementFacile::appuiDo1(){
     Note *note = new Note("do","majeur");
@@ -238,6 +251,8 @@ void EntrainementFacile::appuiSi2(){
 void EntrainementFacile::goAccueil(){
     enJeu = false;
     deconnectionDesTouches();
+    labelReponse->setVisible(false);
+    update();
     tabReponse = new QVector<Note*>();
     go->setEnabled(true);
     pages->setCurrentIndex(0);
@@ -297,7 +312,7 @@ void EntrainementFacile::chargerPartition(QString fichier){
 
 
 void EntrainementFacile::paintEvent(QPaintEvent* e){
-    labelReponse->setVisible(false);
+    //labelReponse->setVisible(false);
     update();
 
     QString fileName = "temp.txt";
@@ -335,6 +350,14 @@ void EntrainementFacile::paintEvent(QPaintEvent* e){
 
 
     if(enJeu){
+        if(tabReponse->size() != tabNotes->size()){
+            int numeroNote = tabReponse->size();
+            painter.drawLine(160+(numeroNote*60),180,160+(numeroNote*60),210);
+            painter.drawLine(154+(numeroNote*60),190,160+(numeroNote*60),180);
+            painter.drawLine(160+(numeroNote*60),180,166+(numeroNote*60),190);
+
+        }
+
         for (int i = 0; i < tabNotes->size(); ++i) {
             QString nNom = tabNotes->at(i)->nom;
             QString nHauteur = tabNotes->at(i)->hauteur;
@@ -344,6 +367,8 @@ void EntrainementFacile::paintEvent(QPaintEvent* e){
 
            //Dans le cas ou la partie est terminée
         if(tabReponse->size()>=tabNotes->size()){
+            enJeu = false;
+
             piano->setEnabled(false);
             piano->do1->setEnabled(false);
             piano->do2->setEnabled(false);
@@ -383,10 +408,16 @@ void EntrainementFacile::paintEvent(QPaintEvent* e){
                 }
             }
 
+
             QString lab = "<center>La partie est terminée. Vous avez "+QString::number(nbBonneReponses)+" bonnes réponses sur "+QString::number(tabNotes->size())+"<br/>Réponses attendues : "+goodRep+"<br/>Vos réponses : "+userRep+"</p></center>";
             labelReponse->setText(lab);
             labelReponse->setReadOnly(true);
             labelReponse->setVisible(true);
+
+            go->setText("Rejouer");
+            go->setEnabled(true);
+
+
 
         }
         else{
