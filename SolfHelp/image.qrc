@@ -3,6 +3,11 @@
         <file>G-clef.svg</file>
         <file>img/b_accueil.gif</file>
         <file>img/notes-de-musique.png</file>
+        <file>img/arrows.png</file>
+        <file>img/home.png</file>
+        <file>img/icon.png</file>
+        <file>img/arrow.png</file>
+        <file>img/time.png</file>
     </qresource>
     <qresource prefix="/xml">
         <file>Demo1.xml</file>

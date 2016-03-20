@@ -7,6 +7,7 @@
 #include "jeulibre.h"
 #include "entrainementpage1.h"
 #include "entrainementfacile.h"
+#include "cours.h"
 
 class Fenetre : public QWidget
 {
@@ -22,6 +23,7 @@ private:
     JeuLibre *jeuLibre;
     EntrainementPage1 *ent1;
     EntrainementFacile *entFacile;
+    Cours *cours;
 
     QString choixPartition;
 };

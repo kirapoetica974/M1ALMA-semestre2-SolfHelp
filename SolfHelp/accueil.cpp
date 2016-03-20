@@ -52,6 +52,7 @@ Accueil::Accueil(QStackedWidget *p) : QWidget()
 void Accueil::doCours(){
     qDebug() << "J'ai cliqué sur cours";
     ecrireLog("Cours");
+    pages->setCurrentIndex(4);
 }
 
 void Accueil::doEntrainement(){

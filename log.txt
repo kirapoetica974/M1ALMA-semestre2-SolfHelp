@@ -1,0 +1,823 @@
+
+20-03-2016  10:24:29   Ouverture de l'application.
+20-03-2016  10:24:31  Entrainement
+20-03-2016  10:24:34  Demo5 : Entrainement en mode Difficile
+20-03-2016  10:24:36  Fin de l'entrainement. Score : -671270998/0
+20-03-2016  10:24:36  Retour choix des partitions
+20-03-2016  10:25:12   Ouverture de l'application.
+20-03-2016  10:25:14  Entrainement
+20-03-2016  10:25:17  Demo4 : Entrainement en mode facile
+20-03-2016  10:26:46   Ouverture de l'application.
+20-03-2016  10:26:48  Entrainement
+20-03-2016  10:26:50  Demo5 : Entrainement en mode facile
+20-03-2016  10:35:25   Ouverture de l'application.
+20-03-2016  10:35:26  Entrainement
+20-03-2016  10:35:28  Demo6 : Entrainement en mode Difficile
+20-03-2016  10:35:32  Fin de l'entrainement. Score : -671270998/0
+20-03-2016  10:35:32  Retour choix des partitions
+20-03-2016  10:36:35   Ouverture de l'application.
+20-03-2016  10:36:37  Entrainement
+20-03-2016  10:36:39  Demo5 : Entrainement en mode facile
+20-03-2016  10:36:45  Fin de l'entrainement. Score : -671270998/0
+20-03-2016  10:36:45  Retour choix des partitions
+20-03-2016  10:36:47  Demo5 : Entrainement en mode Difficile
+20-03-2016  10:36:49  Début de l'entrainement
+20-03-2016  10:36:51  clic sur FaM
+20-03-2016  10:36:52  clic sur Dom
+20-03-2016  10:36:52  clic sur Mim
+20-03-2016  10:36:53  clic sur SolM
+20-03-2016  10:36:53  clic sur MiM
+20-03-2016  10:36:54  clic sur Mim
+20-03-2016  10:36:57  Début de l'entrainement
+20-03-2016  10:36:58  clic sur FaM
+20-03-2016  10:36:59  clic sur Dom
+20-03-2016  10:36:59  clic sur LaM
+20-03-2016  10:37:01  clic sur LaM
+20-03-2016  10:37:02  clic sur LaM
+20-03-2016  10:37:19  Début de l'entrainement
+20-03-2016  10:37:46   Ouverture de l'application.
+20-03-2016  10:38:00   Ouverture de l'application.
+20-03-2016  10:38:02  Entrainement
+20-03-2016  10:38:04  Demo4 : Entrainement en mode facile
+20-03-2016  10:38:06  Début de l'entrainement
+20-03-2016  10:38:07  clic sur FaM
+20-03-2016  10:38:07  clic sur SiM
+20-03-2016  10:38:08  clic sur FaM
+20-03-2016  10:38:08  clic sur Mim
+20-03-2016  10:38:08  clic sur SiM
+20-03-2016  10:38:09  clic sur Fam
+20-03-2016  10:38:16  Fin de l'entrainement. Score : 0/6
+20-03-2016  10:38:16  Retour choix des partitions
+20-03-2016  10:38:17  Demo4 : Entrainement en mode facile
+20-03-2016  10:38:19  Début de l'entrainement
+20-03-2016  10:38:19  clic sur FaM
+20-03-2016  10:38:20  clic sur SolM
+20-03-2016  10:38:20  clic sur SolM
+20-03-2016  10:38:21  clic sur ReM
+20-03-2016  10:38:21  clic sur Fam
+20-03-2016  10:38:22  clic sur Rem
+20-03-2016  10:38:24  Début de l'entrainement
+20-03-2016  10:38:26  clic sur FaM
+20-03-2016  10:38:26  clic sur Rem
+20-03-2016  10:38:26  clic sur LaM
+20-03-2016  10:38:27  clic sur Solm
+20-03-2016  10:38:27  clic sur SolM
+20-03-2016  10:38:28  clic sur Mim
+20-03-2016  10:38:38  Fin de l'entrainement. Score : 1/6
+20-03-2016  10:38:38  Retour choix des partitions
+20-03-2016  10:38:42   Ouverture de l'application.
+20-03-2016  10:42:23   Ouverture de l'application.
+20-03-2016  10:42:26  Entrainement Libre
+20-03-2016  10:42:28  Clic sur Accueil
+20-03-2016  10:42:29  Entrainement
+20-03-2016  10:42:31  Demo4 : Entrainement en mode facile
+20-03-2016  10:44:31   Ouverture de l'application.
+20-03-2016  10:44:33  Entrainement
+20-03-2016  10:44:35  clic sur Accueil
+20-03-2016  10:44:36  Entrainement Libre
+20-03-2016  10:44:40  clic sur SiM
+20-03-2016  10:44:41  clic sur FaM
+20-03-2016  10:44:41  clic sur Rem
+20-03-2016  10:44:42  clic sur Solm
+20-03-2016  10:44:42  clic sur LaM
+20-03-2016  10:44:42  clic sur Mim
+20-03-2016  10:44:45  Clic sur Accueil
+20-03-2016  10:44:49  Entrainement
+20-03-2016  10:44:54  clic sur Accueil
+20-03-2016  10:44:55  Cours
+20-03-2016  10:44:56  Entrainement
+20-03-2016  10:44:58  clic sur Accueil
+20-03-2016  10:45:51   Ouverture de l'application.
+20-03-2016  10:45:54  Entrainement
+20-03-2016  10:45:57  Demo5 : Entrainement en mode facile
+20-03-2016  10:46:11  Fin de l'entrainement. Score : 0/0
+20-03-2016  10:46:11  Retour choix des partitions
+20-03-2016  10:46:14  clic sur Accueil
+20-03-2016  10:46:17  Entrainement
+20-03-2016  10:46:24  Demo2 : Entrainement en mode facile
+20-03-2016  10:48:30   Ouverture de l'application.
+20-03-2016  10:48:32  Entrainement
+20-03-2016  10:48:33  Demo4 : Entrainement en mode facile
+20-03-2016  10:50:10   Ouverture de l'application.
+20-03-2016  10:50:12  Entrainement
+20-03-2016  10:50:14  Demo4 : Entrainement en mode facile
+20-03-2016  10:50:30   Ouverture de l'application.
+20-03-2016  10:50:31  Entrainement
+20-03-2016  10:50:33  Demo4 : Entrainement en mode facile
+20-03-2016  10:50:50   Ouverture de l'application.
+20-03-2016  10:50:51  Entrainement
+20-03-2016  10:50:53  Demo4 : Entrainement en mode facile
+20-03-2016  10:51:32   Ouverture de l'application.
+20-03-2016  10:51:34  Entrainement
+20-03-2016  10:51:36  Demo4 : Entrainement en mode facile
+20-03-2016  10:51:59   Ouverture de l'application.
+20-03-2016  10:52:00  Entrainement
+20-03-2016  10:52:02  Demo4 : Entrainement en mode facile
+20-03-2016  10:52:25   Ouverture de l'application.
+20-03-2016  10:52:26  Entrainement
+20-03-2016  10:52:28  Demo3 : Entrainement en mode facile
+20-03-2016  10:52:44   Ouverture de l'application.
+20-03-2016  10:52:45  Entrainement
+20-03-2016  10:52:47  Demo5 : Entrainement en mode facile
+20-03-2016  10:53:55   Ouverture de l'application.
+20-03-2016  10:53:56  Entrainement
+20-03-2016  10:53:58  Demo5 : Entrainement en mode facile
+20-03-2016  10:54:08  Début de l'entrainement
+20-03-2016  10:54:08  clic sur SolM
+20-03-2016  10:54:09  clic sur Mim
+20-03-2016  10:54:09  clic sur LaM
+20-03-2016  10:54:09  clic sur Rem
+20-03-2016  10:54:10  clic sur LaM
+20-03-2016  10:54:10  clic sur FaM
+20-03-2016  10:54:39   Ouverture de l'application.
+20-03-2016  10:54:40  Entrainement
+20-03-2016  10:54:42  Demo6 : Entrainement en mode facile
+20-03-2016  10:54:43  Début de l'entrainement
+20-03-2016  10:54:44  clic sur MiM
+20-03-2016  10:54:44  clic sur Rem
+20-03-2016  10:54:44  clic sur FaM
+20-03-2016  10:54:45  clic sur Rem
+20-03-2016  10:54:45  clic sur LaM
+20-03-2016  10:54:45  clic sur Fam
+20-03-2016  10:55:30   Ouverture de l'application.
+20-03-2016  10:55:31  Entrainement
+20-03-2016  10:55:33  Demo5 : Entrainement en mode facile
+20-03-2016  10:55:36  Début de l'entrainement
+20-03-2016  10:55:37  clic sur FaM
+20-03-2016  10:55:37  clic sur Dom
+20-03-2016  10:55:38  clic sur SolM
+20-03-2016  10:55:38  clic sur SiM
+20-03-2016  10:55:50   Ouverture de l'application.
+20-03-2016  10:55:52  Entrainement
+20-03-2016  10:55:54  Demo4 : Entrainement en mode facile
+20-03-2016  10:55:55  Début de l'entrainement
+20-03-2016  10:55:55  clic sur MiM
+20-03-2016  10:55:56  clic sur SiM
+20-03-2016  10:55:56  clic sur FaM
+20-03-2016  10:55:56  clic sur Fam
+20-03-2016  10:55:57  clic sur SiM
+20-03-2016  10:55:57  clic sur LaM
+20-03-2016  10:56:20   Ouverture de l'application.
+20-03-2016  10:56:22  Entrainement
+20-03-2016  10:56:24  Demo5 : Entrainement en mode facile
+20-03-2016  10:56:40   Ouverture de l'application.
+20-03-2016  10:56:41  Entrainement
+20-03-2016  10:56:43  Demo5 : Entrainement en mode facile
+20-03-2016  10:56:51  Début de l'entrainement
+20-03-2016  10:56:52  clic sur FaM
+20-03-2016  10:56:53  clic sur SiM
+20-03-2016  10:56:53  clic sur LaM
+20-03-2016  10:56:54  clic sur ReM
+20-03-2016  10:56:54  clic sur Dom
+20-03-2016  10:56:55  clic sur Solm
+20-03-2016  10:56:57  Début de l'entrainement
+20-03-2016  10:56:59  clic sur MiM
+20-03-2016  10:56:59  clic sur Fam
+20-03-2016  10:57:00  clic sur Rem
+20-03-2016  10:57:00  clic sur LaM
+20-03-2016  10:57:00  clic sur Mim
+20-03-2016  10:57:01  clic sur LaM
+20-03-2016  10:57:03  Début de l'entrainement
+20-03-2016  10:57:04  clic sur DoM
+20-03-2016  10:57:08  clic sur Lam
+20-03-2016  10:57:11  clic sur LaM
+20-03-2016  10:57:13  clic sur SiM
+20-03-2016  10:57:16  clic sur Solm
+20-03-2016  10:57:17  clic sur Fam
+20-03-2016  10:57:41  Début de l'entrainement
+20-03-2016  10:57:41  clic sur SolM
+20-03-2016  10:57:42  clic sur LaM
+20-03-2016  10:57:42  clic sur SiM
+20-03-2016  10:57:43  clic sur Dom
+20-03-2016  10:57:43  clic sur Rem
+20-03-2016  10:57:43  clic sur Mim
+20-03-2016  10:57:46  Début de l'entrainement
+20-03-2016  10:57:48  clic sur LaM
+20-03-2016  10:57:48  clic sur SiM
+20-03-2016  10:57:49  clic sur Dom
+20-03-2016  10:57:49  clic sur SolM
+20-03-2016  10:57:49  clic sur DoM
+20-03-2016  10:57:50  clic sur DoM
+20-03-2016  10:57:56  Fin de l'entrainement. Score : 0/6
+20-03-2016  10:57:56  Retour choix des partitions
+20-03-2016  10:57:59  clic sur Accueil
+20-03-2016  10:58:04  Entrainement Libre
+20-03-2016  10:58:05  clic sur SiM
+20-03-2016  10:58:06  clic sur Dom
+20-03-2016  10:58:06  clic sur Rem
+20-03-2016  10:58:06  clic sur LaM
+20-03-2016  10:58:07  clic sur DoM
+20-03-2016  10:58:07  clic sur ReM
+20-03-2016  10:58:07  clic sur FaM
+20-03-2016  10:58:08  clic sur SolM
+20-03-2016  10:58:08  clic sur FaM
+20-03-2016  10:58:08  clic sur ReM
+20-03-2016  10:58:08  clic sur SolM
+20-03-2016  10:58:08  clic sur DoM
+20-03-2016  10:58:09  clic sur FaM
+20-03-2016  10:58:09  clic sur MiM
+20-03-2016  10:58:09  clic sur SolM
+20-03-2016  10:58:09  clic sur FaM
+20-03-2016  10:58:09  clic sur MiM
+20-03-2016  10:58:10  clic sur MiM
+20-03-2016  10:58:11  clic sur MiM
+20-03-2016  10:58:11  clic sur MiM
+20-03-2016  10:58:11  clic sur MiM
+20-03-2016  10:58:12  clic sur DoM
+20-03-2016  10:58:13  clic sur DoM
+20-03-2016  10:58:13  clic sur DoM
+20-03-2016  10:58:13  clic sur ReM
+20-03-2016  10:58:14  clic sur MiM
+20-03-2016  10:58:14  clic sur ReM
+20-03-2016  10:58:15  clic sur DoM
+20-03-2016  10:58:15  clic sur MiM
+20-03-2016  10:58:15  clic sur ReM
+20-03-2016  10:58:15  clic sur ReM
+20-03-2016  10:58:16  clic sur DoM
+20-03-2016  10:58:17  clic sur DoM
+20-03-2016  10:58:17  clic sur DoM
+20-03-2016  10:58:17  clic sur DoM
+20-03-2016  10:58:18  clic sur ReM
+20-03-2016  10:58:18  clic sur MiM
+20-03-2016  10:58:18  clic sur ReM
+20-03-2016  10:58:19  clic sur DoM
+20-03-2016  10:58:19  clic sur MiM
+20-03-2016  10:58:19  clic sur ReM
+20-03-2016  10:58:20  clic sur ReM
+20-03-2016  10:58:20  clic sur DoM
+20-03-2016  10:58:21  clic sur MiM
+20-03-2016  10:58:22  clic sur MiM
+20-03-2016  10:58:22  clic sur ReM
+20-03-2016  10:58:22  clic sur ReM
+20-03-2016  10:58:22  clic sur ReM
+20-03-2016  10:58:23  clic sur ReM
+20-03-2016  10:58:25  clic sur Dom
+20-03-2016  10:58:25  clic sur Dom
+20-03-2016  10:58:26  clic sur Dom
+20-03-2016  10:58:26  clic sur Rem
+20-03-2016  10:58:26  clic sur Mim
+20-03-2016  10:58:27  clic sur Rem
+20-03-2016  10:58:27  clic sur Dom
+20-03-2016  10:58:28  clic sur Mim
+20-03-2016  10:58:28  clic sur Rem
+20-03-2016  10:58:28  clic sur Rem
+20-03-2016  10:58:29  clic sur Dom
+20-03-2016  10:58:30  clic sur Dom
+20-03-2016  10:58:30  clic sur Dom
+20-03-2016  10:58:30  clic sur Dom
+20-03-2016  10:58:30  clic sur Rem
+20-03-2016  10:58:31  clic sur Mim
+20-03-2016  10:58:31  clic sur Rem
+20-03-2016  10:58:32  clic sur Dom
+20-03-2016  10:58:32  clic sur Mim
+20-03-2016  10:58:32  clic sur Rem
+20-03-2016  10:58:33  clic sur Rem
+20-03-2016  10:58:33  clic sur Dom
+20-03-2016  10:58:34  clic sur Rem
+20-03-2016  10:58:34  clic sur Rem
+20-03-2016  10:58:35  clic sur Rem
+20-03-2016  10:58:35  clic sur Rem
+20-03-2016  10:58:35  clic sur SolM
+20-03-2016  10:58:36  clic sur FaM
+20-03-2016  10:58:37  clic sur Mim
+20-03-2016  10:58:38  clic sur Rem
+20-03-2016  10:58:38  clic sur Rem
+20-03-2016  10:58:38  clic sur Rem
+20-03-2016  10:58:39  clic sur Rem
+20-03-2016  10:58:41  clic sur Dom
+20-03-2016  10:58:43  clic sur SiM
+20-03-2016  10:58:43  clic sur LaM
+20-03-2016  10:58:44  clic sur Mim
+20-03-2016  10:58:44  clic sur Rem
+20-03-2016  10:58:45  clic sur Rem
+20-03-2016  10:58:45  clic sur Rem
+20-03-2016  10:58:45  clic sur Rem
+20-03-2016  10:58:45  clic sur LaM
+20-03-2016  10:58:46  clic sur LaM
+20-03-2016  10:58:47  clic sur Mim
+20-03-2016  10:58:48  clic sur Rem
+20-03-2016  10:58:48  clic sur Dom
+20-03-2016  10:58:49  clic sur SiM
+20-03-2016  10:58:49  clic sur LaM
+20-03-2016  10:58:50  clic sur SolM
+20-03-2016  10:58:50  clic sur SolM
+20-03-2016  10:58:50  clic sur SolM
+20-03-2016  10:58:51  clic sur Dom
+20-03-2016  10:58:51  clic sur Dom
+20-03-2016  10:58:51  clic sur Dom
+20-03-2016  10:58:52  clic sur Rem
+20-03-2016  10:58:52  clic sur Mim
+20-03-2016  10:58:52  clic sur Rem
+20-03-2016  10:58:53  clic sur Dom
+20-03-2016  10:58:53  clic sur Mim
+20-03-2016  10:58:53  clic sur Rem
+20-03-2016  10:58:53  clic sur Dom
+20-03-2016  10:58:54  clic sur Rem
+20-03-2016  10:58:54  clic sur Dom
+20-03-2016  10:58:54  clic sur Rem
+20-03-2016  10:58:54  clic sur Mim
+20-03-2016  10:58:54  clic sur Dom
+20-03-2016  10:58:54  clic sur Mim
+20-03-2016  10:58:54  clic sur Rem
+20-03-2016  10:58:54  clic sur Dom
+20-03-2016  10:58:54  clic sur Rem
+20-03-2016  10:58:54  clic sur Dom
+20-03-2016  10:58:54  clic sur Mim
+20-03-2016  10:58:54  clic sur Rem
+20-03-2016  10:58:55  clic sur Dom
+20-03-2016  10:58:55  clic sur Mim
+20-03-2016  10:58:55  clic sur Rem
+20-03-2016  10:58:55  clic sur Mim
+20-03-2016  10:58:55  clic sur Rem
+20-03-2016  10:58:55  clic sur Rem
+20-03-2016  10:58:55  clic sur Mim
+20-03-2016  10:58:55  clic sur Dom
+20-03-2016  10:58:56  clic sur Mim
+20-03-2016  10:58:56  clic sur Rem
+20-03-2016  10:58:56  clic sur Dom
+20-03-2016  10:58:56  clic sur Rem
+20-03-2016  10:58:56  clic sur Dom
+20-03-2016  10:58:56  clic sur Dom
+20-03-2016  10:58:56  clic sur Rem
+20-03-2016  10:58:56  clic sur Mim
+20-03-2016  10:58:56  clic sur Dom
+20-03-2016  10:58:56  clic sur Mim
+20-03-2016  10:58:56  clic sur Rem
+20-03-2016  10:58:56  clic sur Dom
+20-03-2016  10:58:56  clic sur Rem
+20-03-2016  10:58:56  clic sur Dom
+20-03-2016  10:58:56  clic sur Rem
+20-03-2016  10:58:57  clic sur Mim
+20-03-2016  10:58:57  clic sur Rem
+20-03-2016  10:58:57  clic sur Dom
+20-03-2016  10:58:58  Clic sur Accueil
+20-03-2016  10:59:02  Entrainement
+20-03-2016  10:59:04  Demo7 : Entrainement en mode facile
+20-03-2016  10:59:05  Début de l'entrainement
+20-03-2016  10:59:06  clic sur SolM
+20-03-2016  10:59:06  clic sur SiM
+20-03-2016  10:59:06  clic sur Dom
+20-03-2016  10:59:07  clic sur MiM
+20-03-2016  10:59:07  clic sur LaM
+20-03-2016  10:59:07  clic sur FaM
+20-03-2016  10:59:22  clic sur Accueil
+20-03-2016  10:59:22  Fin de l'entrainement. Score : 0/6
+20-03-2016  10:59:24  Cours
+20-03-2016  11:10:20   Ouverture de l'application.
+20-03-2016  11:10:26  Entrainement
+20-03-2016  11:10:28  Demo4 : Entrainement en mode facile
+20-03-2016  11:11:22   Ouverture de l'application.
+20-03-2016  11:11:24  Entrainement
+20-03-2016  11:11:26  Demo4 : Entrainement en mode facile
+20-03-2016  11:11:58   Ouverture de l'application.
+20-03-2016  11:12:00  Entrainement
+20-03-2016  11:12:02  Demo4 : Entrainement en mode facile
+20-03-2016  11:15:43  Début de l'entrainement
+20-03-2016  11:15:45  clic sur SolMD
+20-03-2016  11:15:45  clic sur Rem
+20-03-2016  11:15:45  clic sur LaM
+20-03-2016  11:15:46  clic sur SolM
+20-03-2016  11:15:46  clic sur SolM
+20-03-2016  11:15:46  clic sur Dom
+20-03-2016  11:15:47  clic sur LaM
+20-03-2016  11:27:20   Ouverture de l'application.
+20-03-2016  11:27:21  Entrainement
+20-03-2016  11:27:23  Demo7 : Entrainement en mode facile
+20-03-2016  11:27:46   Ouverture de l'application.
+20-03-2016  11:27:48  Entrainement
+20-03-2016  11:27:51  Demo5 : Entrainement en mode facile
+20-03-2016  11:27:59  Début de l'entrainement
+20-03-2016  11:27:59  clic sur SolM
+20-03-2016  11:28:00  clic sur SiM
+20-03-2016  11:28:00  clic sur Rem
+20-03-2016  11:28:01  clic sur ReM
+20-03-2016  11:28:02  clic sur ReM
+20-03-2016  11:28:02  clic sur ReM
+20-03-2016  11:36:34   Ouverture de l'application.
+20-03-2016  11:36:38  Entrainement Libre
+20-03-2016  11:42:01   Ouverture de l'application.
+20-03-2016  11:42:04  Entrainement Libre
+20-03-2016  11:42:24   Ouverture de l'application.
+20-03-2016  11:42:26  Entrainement Libre
+20-03-2016  11:48:11   Ouverture de l'application.
+20-03-2016  11:48:13  Entrainement Libre
+20-03-2016  11:48:17  Clic sur Accueil
+20-03-2016  11:48:18  Entrainement
+20-03-2016  11:50:05   Ouverture de l'application.
+20-03-2016  11:50:08  Entrainement
+20-03-2016  11:50:12  Demo4 : Entrainement en mode facile
+20-03-2016  11:51:09  Début de l'entrainement
+20-03-2016  11:51:10  clic sur LaM
+20-03-2016  11:51:11  clic sur Dom
+20-03-2016  11:51:11  clic sur Dom
+20-03-2016  11:51:11  clic sur Dom
+20-03-2016  11:51:12  clic sur LaM
+20-03-2016  11:51:12  clic sur LaM
+20-03-2016  11:51:20  Fin de l'entrainement. Score : 1/6
+20-03-2016  11:51:20  Retour choix des partitions
+20-03-2016  11:51:26  Demo1 : Entrainement en mode facile
+20-03-2016  11:51:28  Début de l'entrainement
+20-03-2016  11:51:28  clic sur SolM
+20-03-2016  11:51:29  clic sur Rem
+20-03-2016  11:51:29  clic sur Rem
+20-03-2016  11:51:30  clic sur Dom
+20-03-2016  11:51:30  clic sur SiM
+20-03-2016  11:51:31  clic sur SolM
+20-03-2016  11:56:33   Ouverture de l'application.
+20-03-2016  11:56:36  Entrainement
+20-03-2016  11:56:38  Demo5 : Entrainement en mode facile
+20-03-2016  11:56:40  Début de l'entrainement
+20-03-2016  11:56:41  clic sur LaM
+20-03-2016  11:56:41  clic sur Dom
+20-03-2016  11:56:42  clic sur Mim
+20-03-2016  11:56:42  clic sur LaM
+20-03-2016  11:56:43  clic sur FaM
+20-03-2016  11:56:45  clic sur Rem
+20-03-2016  11:56:49  Fin de l'entrainement. Score : 0/6
+20-03-2016  11:56:49  Retour choix des partitions
+20-03-2016  11:56:52  Demo8 : Entrainement en mode Difficile
+20-03-2016  11:59:39   Ouverture de l'application.
+20-03-2016  11:59:42  Entrainement
+20-03-2016  11:59:47  Demo6 : Entrainement en mode facile
+20-03-2016  11:59:51  Début de l'entrainement
+20-03-2016  11:59:52  clic sur SiM
+20-03-2016  11:59:53  clic sur LaM
+20-03-2016  11:59:53  clic sur FaM
+20-03-2016  11:59:54  clic sur MiM
+20-03-2016  11:59:54  clic sur LaM
+20-03-2016  11:59:55  clic sur Dom
+20-03-2016  11:59:59  Début de l'entrainement
+20-03-2016  12:00:00  clic sur LaM
+20-03-2016  12:00:00  clic sur SolM
+20-03-2016  12:00:01  clic sur MiM
+20-03-2016  12:00:01  clic sur Rem
+20-03-2016  12:00:02  clic sur SiM
+20-03-2016  12:00:03  clic sur SiM
+20-03-2016  12:00:07  Début de l'entrainement
+20-03-2016  12:00:09  clic sur SolM
+20-03-2016  12:00:10  clic sur Dom
+20-03-2016  12:00:10  clic sur LaM
+20-03-2016  12:00:11  clic sur MiM
+20-03-2016  12:00:12  clic sur SiM
+20-03-2016  12:00:13  clic sur SolM
+20-03-2016  12:00:17  clic sur Accueil
+20-03-2016  12:00:17  Fin de l'entrainement. Score : 0/6
+20-03-2016  12:00:19  Entrainement Libre
+20-03-2016  12:00:19  clic sur SiM
+20-03-2016  12:00:20  clic sur FaM
+20-03-2016  12:00:20  clic sur Rem
+20-03-2016  12:00:20  clic sur Mim
+20-03-2016  12:00:22  Clic sur Accueil
+20-03-2016  12:00:23  Entrainement
+20-03-2016  12:00:27  Demo1 : Entrainement en mode Difficile
+20-03-2016  12:00:29  Début de l'entrainement
+20-03-2016  12:00:37  clic sur LaM
+20-03-2016  12:00:38  clic sur SiM
+20-03-2016  12:00:43  clic sur SiM
+20-03-2016  12:03:23   Ouverture de l'application.
+20-03-2016  12:03:25  Entrainement
+20-03-2016  12:03:28  Demo4 : Entrainement en mode Difficile
+20-03-2016  12:03:30  Début de l'entrainement
+20-03-2016  12:03:31  clic sur LaM
+20-03-2016  12:03:32  clic sur Dom
+20-03-2016  12:03:32  clic sur LaM
+20-03-2016  12:03:34  clic sur LaM
+20-03-2016  12:04:12   Ouverture de l'application.
+20-03-2016  12:04:14  Entrainement
+20-03-2016  12:04:16  Demo4 : Entrainement en mode Difficile
+20-03-2016  12:04:17  Début de l'entrainement
+20-03-2016  12:04:30  clic sur LaM
+20-03-2016  12:06:19   Ouverture de l'application.
+20-03-2016  12:06:21  Entrainement
+20-03-2016  12:06:24  Demo3 : Entrainement en mode Difficile
+20-03-2016  12:06:26  Début de l'entrainement
+20-03-2016  12:06:27  clic sur SiM
+20-03-2016  12:06:28  clic sur LaM
+20-03-2016  12:06:29  clic sur LaM
+20-03-2016  12:06:31  clic sur Rem
+20-03-2016  12:06:37  clic sur Rem
+20-03-2016  12:07:54   Ouverture de l'application.
+20-03-2016  12:07:56  Entrainement
+20-03-2016  12:07:58  Demo5 : Entrainement en mode facile
+20-03-2016  12:07:59  Début de l'entrainement
+20-03-2016  12:08:00  clic sur FaM
+20-03-2016  12:08:00  clic sur Mim
+20-03-2016  12:08:01  clic sur SiM
+20-03-2016  12:08:01  clic sur LaM
+20-03-2016  12:08:01  clic sur FaM
+20-03-2016  12:08:02  clic sur Dom
+20-03-2016  12:08:05  Fin de l'entrainement. Score : 0/6
+20-03-2016  12:08:05  Retour choix des partitions
+20-03-2016  12:08:07  Demo8 : Entrainement en mode Difficile
+20-03-2016  12:08:09  Début de l'entrainement
+20-03-2016  12:08:13  clic sur SolM
+20-03-2016  12:08:13  clic sur Rem
+20-03-2016  12:08:20  clic sur SiM
+20-03-2016  12:09:29   Ouverture de l'application.
+20-03-2016  12:09:32  Entrainement
+20-03-2016  12:09:34  Demo5 : Entrainement en mode Difficile
+20-03-2016  12:09:35  Début de l'entrainement
+20-03-2016  12:09:36  clic sur LaM
+20-03-2016  12:09:37  clic sur Dom
+20-03-2016  12:09:38  clic sur SiM
+20-03-2016  12:09:39  clic sur SolM
+20-03-2016  12:10:40   Ouverture de l'application.
+20-03-2016  12:10:42  Entrainement
+20-03-2016  12:10:44  Demo5 : Entrainement en mode Difficile
+20-03-2016  12:10:45  Début de l'entrainement
+20-03-2016  12:10:52  clic sur SiM
+20-03-2016  12:10:53  clic sur Rem
+20-03-2016  12:37:09   Ouverture de l'application.
+20-03-2016  12:37:11  Entrainement
+20-03-2016  12:37:13  Demo5 : Entrainement en mode Difficile
+20-03-2016  12:37:15  Début de l'entrainement
+20-03-2016  12:37:16  clic sur FaM
+20-03-2016  12:37:17  clic sur SolM
+20-03-2016  12:37:19  clic sur SolM
+20-03-2016  12:37:22  clic sur Fam
+20-03-2016  12:37:25  clic sur Rem
+20-03-2016  12:37:41  Fin de l'entrainement. Score : 0/6
+20-03-2016  12:37:41  Retour choix des partitions
+20-03-2016  12:37:48  Demo8 : Entrainement en mode Difficile
+20-03-2016  12:37:49  Début de l'entrainement
+20-03-2016  12:37:51  clic sur SolM
+20-03-2016  12:37:51  clic sur LaM
+20-03-2016  12:37:52  clic sur SolM
+20-03-2016  12:38:02  clic sur Rem
+20-03-2016  12:38:47   Ouverture de l'application.
+20-03-2016  12:38:49  Entrainement
+20-03-2016  12:39:07  Demo6 : Entrainement en mode Difficile
+20-03-2016  12:39:08  Début de l'entrainement
+20-03-2016  12:39:09  clic sur LaM
+20-03-2016  12:39:10  clic sur SolM
+20-03-2016  12:39:19  clic sur FaM
+20-03-2016  12:39:38  Début de l'entrainement
+20-03-2016  12:39:40  clic sur MiM
+20-03-2016  12:39:42  clic sur MiM
+20-03-2016  12:39:47  clic sur FaM
+20-03-2016  12:39:50  clic sur DoM
+20-03-2016  12:43:27   Ouverture de l'application.
+20-03-2016  12:43:29  Entrainement
+20-03-2016  12:43:33  Demo6 : Entrainement en mode Difficile
+20-03-2016  12:44:54   Ouverture de l'application.
+20-03-2016  12:44:56  Entrainement
+20-03-2016  12:44:58  Demo5 : Entrainement en mode Difficile
+20-03-2016  12:46:47   Ouverture de l'application.
+20-03-2016  12:46:52  Entrainement
+20-03-2016  12:46:54  Demo6 : Entrainement en mode Difficile
+20-03-2016  12:48:14   Ouverture de l'application.
+20-03-2016  12:48:15  Entrainement
+20-03-2016  12:48:18  Demo5 : Entrainement en mode Difficile
+20-03-2016  12:48:54   Ouverture de l'application.
+20-03-2016  12:48:56  Entrainement
+20-03-2016  12:48:59  Demo7 : Entrainement en mode Difficile
+20-03-2016  12:49:53   Ouverture de l'application.
+20-03-2016  12:49:54  Entrainement
+20-03-2016  12:49:56  Demo7 : Entrainement en mode Difficile
+20-03-2016  12:50:16   Ouverture de l'application.
+20-03-2016  12:50:17  Entrainement
+20-03-2016  12:50:19  Demo6 : Entrainement en mode Difficile
+20-03-2016  12:50:33   Ouverture de l'application.
+20-03-2016  12:50:34  Entrainement
+20-03-2016  12:50:36  Demo7 : Entrainement en mode Difficile
+20-03-2016  12:50:51   Ouverture de l'application.
+20-03-2016  12:50:53  Entrainement
+20-03-2016  12:50:55  Demo5 : Entrainement en mode Difficile
+20-03-2016  12:51:29   Ouverture de l'application.
+20-03-2016  12:51:31  Entrainement
+20-03-2016  12:51:32  Demo6 : Entrainement en mode Difficile
+20-03-2016  12:53:27   Ouverture de l'application.
+20-03-2016  12:53:28  Cours
+20-03-2016  12:53:30  Entrainement
+20-03-2016  12:53:32  Demo5 : Entrainement en mode Difficile
+20-03-2016  12:56:12   Ouverture de l'application.
+20-03-2016  12:56:13  Entrainement
+20-03-2016  12:56:15  Demo6 : Entrainement en mode Difficile
+20-03-2016  12:56:40   Ouverture de l'application.
+20-03-2016  12:56:41  Entrainement
+20-03-2016  12:56:43  Demo8 : Entrainement en mode Difficile
+20-03-2016  12:56:56  Début de l'entrainement
+20-03-2016  12:59:20   Ouverture de l'application.
+20-03-2016  12:59:21  Entrainement
+20-03-2016  12:59:23  Demo6 : Entrainement en mode Difficile
+20-03-2016  12:59:25  Début de l'entrainement
+20-03-2016  13:00:32   Ouverture de l'application.
+20-03-2016  13:00:34  Entrainement
+20-03-2016  13:00:36  Demo7 : Entrainement en mode Difficile
+20-03-2016  13:00:38  Début de l'entrainement
+20-03-2016  13:00:53  Fin de l'entrainement. Score : 0/6
+20-03-2016  13:00:53  Retour choix des partitions
+20-03-2016  13:09:22   Ouverture de l'application.
+20-03-2016  13:09:26  Entrainement
+20-03-2016  13:10:41   Ouverture de l'application.
+20-03-2016  13:10:43  Entrainement
+20-03-2016  13:11:37   Ouverture de l'application.
+20-03-2016  13:11:38  Entrainement
+20-03-2016  13:11:47   Ouverture de l'application.
+20-03-2016  13:11:48  Entrainement
+20-03-2016  13:12:06   Ouverture de l'application.
+20-03-2016  13:12:08  Entrainement
+20-03-2016  13:14:10   Ouverture de l'application.
+20-03-2016  13:14:12  Entrainement
+20-03-2016  13:14:40   Ouverture de l'application.
+20-03-2016  13:14:42  Entrainement
+20-03-2016  13:15:05  Demo3 : Entrainement en mode facile
+20-03-2016  13:17:22   Ouverture de l'application.
+20-03-2016  13:17:25  Entrainement
+20-03-2016  13:17:28  Demo5 : Entrainement en mode facile
+20-03-2016  13:17:31  Début de l'entrainement
+20-03-2016  13:17:33  clic sur FaM
+20-03-2016  13:17:33  clic sur SolM
+20-03-2016  13:17:34  clic sur Dom
+20-03-2016  13:17:34  clic sur LaM
+20-03-2016  13:17:35  clic sur FaM
+20-03-2016  13:17:35  clic sur MiM
+20-03-2016  13:17:38  Début de l'entrainement
+20-03-2016  13:17:38  clic sur LaM
+20-03-2016  13:17:39  clic sur FaM
+20-03-2016  13:17:39  clic sur Dom
+20-03-2016  13:17:40  clic sur Mim
+20-03-2016  13:17:40  clic sur Mim
+20-03-2016  13:17:41  clic sur SolM
+20-03-2016  13:17:43  Fin de l'entrainement. Score : 0/6
+20-03-2016  13:17:43  Retour choix des partitions
+20-03-2016  13:17:47  Demo2 : Entrainement en mode facile
+20-03-2016  13:17:49  Début de l'entrainement
+20-03-2016  13:17:50  clic sur FaM
+20-03-2016  13:17:51  clic sur SiM
+20-03-2016  13:17:51  clic sur Rem
+20-03-2016  13:17:51  clic sur LaM
+20-03-2016  13:17:52  clic sur FaM
+20-03-2016  13:17:52  clic sur MiM
+20-03-2016  13:17:55  Début de l'entrainement
+20-03-2016  13:17:57  clic sur DoM
+20-03-2016  13:17:58  clic sur MiM
+20-03-2016  13:17:58  clic sur SolM
+20-03-2016  13:17:59  clic sur SiM
+20-03-2016  13:18:00  clic sur Rem
+20-03-2016  13:18:01  clic sur Fam
+20-03-2016  13:18:05  clic sur Accueil
+20-03-2016  13:18:05  Fin de l'entrainement. Score : 6/6
+20-03-2016  13:18:07  Cours
+20-03-2016  13:19:22   Ouverture de l'application.
+20-03-2016  13:19:24  Entrainement
+20-03-2016  13:19:29  Demo10 : Entrainement en mode Difficile
+20-03-2016  13:19:31  Début de l'entrainement
+20-03-2016  13:19:39  clic sur SiM
+20-03-2016  13:19:40  clic sur LaM
+20-03-2016  13:19:40  clic sur FaM
+20-03-2016  13:19:41  clic sur ReM
+20-03-2016  13:19:45  Début de l'entrainement
+20-03-2016  13:19:46  clic sur LaM
+20-03-2016  13:19:47  clic sur SiM
+20-03-2016  13:19:47  clic sur Dom
+20-03-2016  13:19:48  clic sur Mim
+20-03-2016  13:19:48  clic sur Rem
+20-03-2016  13:19:49  clic sur SolM
+20-03-2016  13:19:51  Début de l'entrainement
+20-03-2016  13:19:52  clic sur Dom
+20-03-2016  13:19:52  clic sur Dom
+20-03-2016  13:19:53  clic sur LaM
+20-03-2016  13:19:53  clic sur SolM
+20-03-2016  13:19:53  clic sur MiM
+20-03-2016  13:19:55  clic sur Dom
+20-03-2016  13:19:57  Début de l'entrainement
+20-03-2016  13:19:58  clic sur LaM
+20-03-2016  13:19:58  clic sur FaM
+20-03-2016  13:19:59  clic sur Dom
+20-03-2016  13:20:00  clic sur SiM
+20-03-2016  13:20:00  clic sur LaM
+20-03-2016  13:20:00  clic sur LaM
+20-03-2016  13:20:03  clic sur Accueil
+20-03-2016  13:20:03  Fin de l'entrainement. Score : 1/6
+20-03-2016  13:20:04  Entrainement Libre
+20-03-2016  13:20:05  clic sur Dom
+20-03-2016  13:20:06  clic sur SiM
+20-03-2016  13:20:06  clic sur LaM
+20-03-2016  13:20:07  clic sur SolM
+20-03-2016  13:20:07  clic sur FaM
+20-03-2016  13:20:08  clic sur MiM
+20-03-2016  13:20:08  clic sur ReM
+20-03-2016  13:20:09  clic sur ReM
+20-03-2016  13:20:09  clic sur ReM
+20-03-2016  13:20:10  clic sur DoM
+20-03-2016  13:20:10  clic sur DoM
+20-03-2016  13:20:10  clic sur ReM
+20-03-2016  13:20:11  clic sur FaM
+20-03-2016  13:20:11  clic sur SolM
+20-03-2016  13:20:11  clic sur LaM
+20-03-2016  13:20:11  clic sur DoM
+20-03-2016  13:20:11  clic sur ReM
+20-03-2016  13:20:12  clic sur SolM
+20-03-2016  13:20:12  clic sur FaM
+20-03-2016  13:20:12  clic sur MiM
+20-03-2016  13:20:12  clic sur SolM
+20-03-2016  13:20:12  clic sur LaM
+20-03-2016  13:20:12  clic sur ReM
+20-03-2016  13:20:12  clic sur MiM
+20-03-2016  13:20:12  clic sur FaM
+20-03-2016  13:20:13  clic sur SolM
+20-03-2016  13:20:13  clic sur MiM
+20-03-2016  13:20:13  clic sur SolM
+20-03-2016  13:20:13  clic sur SolM
+20-03-2016  13:20:13  clic sur FaM
+20-03-2016  13:20:13  clic sur MiM
+20-03-2016  13:20:14  clic sur SolM
+20-03-2016  13:20:14  clic sur ReM
+20-03-2016  13:20:14  clic sur FaM
+20-03-2016  13:20:14  clic sur MiM
+20-03-2016  13:20:14  clic sur FaM
+20-03-2016  13:20:14  clic sur FaM
+20-03-2016  13:20:15  clic sur FaM
+20-03-2016  13:20:15  clic sur MiM
+20-03-2016  13:20:15  clic sur ReM
+20-03-2016  13:20:15  clic sur SolM
+20-03-2016  13:20:15  clic sur LaM
+20-03-2016  13:20:15  clic sur DoM
+20-03-2016  13:20:15  clic sur LaM
+20-03-2016  13:20:15  clic sur DoM
+20-03-2016  13:20:16  clic sur LaM
+20-03-2016  13:20:16  clic sur SolM
+20-03-2016  13:20:16  clic sur ReM
+20-03-2016  13:20:16  clic sur SolM
+20-03-2016  13:20:16  clic sur ReM
+20-03-2016  13:20:16  clic sur FaM
+20-03-2016  13:20:16  clic sur MiM
+20-03-2016  13:20:16  clic sur MiM
+20-03-2016  13:20:16  clic sur FaM
+20-03-2016  13:20:17  clic sur SolM
+20-03-2016  13:20:17  clic sur ReM
+20-03-2016  13:20:17  clic sur SolM
+20-03-2016  13:20:17  clic sur DoM
+20-03-2016  13:20:17  clic sur LaM
+20-03-2016  13:20:18  clic sur LaM
+20-03-2016  13:20:18  clic sur DoM
+20-03-2016  13:20:18  clic sur LaM
+20-03-2016  13:20:18  clic sur LaM
+20-03-2016  13:20:18  clic sur DoM
+20-03-2016  13:20:18  clic sur LaM
+20-03-2016  13:20:19  clic sur DoM
+20-03-2016  13:20:19  clic sur LaM
+20-03-2016  13:20:19  clic sur SolM
+20-03-2016  13:20:19  clic sur ReM
+20-03-2016  13:20:19  clic sur SolM
+20-03-2016  13:20:19  clic sur MiM
+20-03-2016  13:20:19  clic sur FaM
+20-03-2016  13:20:20  clic sur LaM
+20-03-2016  13:20:20  clic sur DoM
+20-03-2016  13:20:20  clic sur SiM
+20-03-2016  13:20:20  clic sur MiM
+20-03-2016  13:20:20  clic sur FaM
+20-03-2016  13:20:20  clic sur LaM
+20-03-2016  13:20:20  clic sur DoM
+20-03-2016  13:20:21  clic sur SiM
+20-03-2016  13:20:21  clic sur ReM
+20-03-2016  13:20:21  clic sur SolM
+20-03-2016  13:20:21  clic sur LaM
+20-03-2016  13:20:21  clic sur SolM
+20-03-2016  13:20:21  clic sur DoM
+20-03-2016  13:20:21  clic sur ReM
+20-03-2016  13:20:21  clic sur MiM
+20-03-2016  13:20:22  clic sur LaM
+20-03-2016  13:20:22  clic sur SolM
+20-03-2016  13:20:22  clic sur DoM
+20-03-2016  13:20:22  clic sur ReM
+20-03-2016  13:20:22  clic sur MiM
+20-03-2016  13:20:23  clic sur SolM
+20-03-2016  13:20:23  clic sur LaM
+20-03-2016  13:20:23  clic sur DoM
+20-03-2016  13:20:23  clic sur ReM
+20-03-2016  13:20:23  clic sur MiM
+20-03-2016  13:20:25  clic sur LaM
+20-03-2016  13:20:25  clic sur SiM
+20-03-2016  13:20:25  clic sur SolM
+20-03-2016  13:20:25  clic sur LaM
+20-03-2016  13:20:25  clic sur SolM
+20-03-2016  13:20:25  clic sur SiM
+20-03-2016  13:20:26  clic sur SolM
+20-03-2016  13:20:26  clic sur LaM
+20-03-2016  13:20:26  clic sur SiM
+20-03-2016  13:20:26  clic sur SiM
+20-03-2016  13:20:26  clic sur SolM
+20-03-2016  13:20:26  clic sur LaM
+20-03-2016  13:20:26  clic sur SolM
+20-03-2016  13:20:26  clic sur LaM
+20-03-2016  13:20:26  clic sur SiM
+20-03-2016  13:20:26  clic sur SolM
+20-03-2016  13:20:26  clic sur SiM
+20-03-2016  13:20:26  clic sur SolM
+20-03-2016  13:20:26  clic sur SiM
+20-03-2016  13:20:26  clic sur LaM
+20-03-2016  13:20:27  clic sur SolM
+20-03-2016  13:20:27  clic sur LaM
+20-03-2016  13:20:27  clic sur SiM
+20-03-2016  13:20:27  clic sur SolM
+20-03-2016  13:20:27  clic sur LaM
+20-03-2016  13:20:27  clic sur SiM
+20-03-2016  13:20:27  clic sur SolM
+20-03-2016  13:20:27  clic sur LaM
+20-03-2016  13:20:27  clic sur SiM
+20-03-2016  13:27:02   Ouverture de l'application.
+20-03-2016  13:27:04  Cours
+20-03-2016  13:28:35   Ouverture de l'application.
+20-03-2016  13:28:36  Cours

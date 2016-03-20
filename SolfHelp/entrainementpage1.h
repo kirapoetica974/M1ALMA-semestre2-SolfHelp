@@ -6,6 +6,7 @@
 #include <QPushButton>
 #include <QComboBox>
 #include <QFile>
+#include <QLabel>
 
 class EntrainementPage1 : public QWidget
 {
@@ -35,6 +36,9 @@ private:
     QComboBox *listePartition;
 
     QString comboText;
+
+    QLabel *labelChoix;
+    QLabel *labelDifficulte;
 
 
     void insertFichier(QString s);

@@ -45,11 +45,13 @@ Fenetre::Fenetre(QWidget *parent): QWidget()
     //      1 : Entrainement Libre
     //      2 : Choix du mode d'entrainement
     //      3 : Entrainement (Jouer)
+    //      4 : Cours
 
     pages->addWidget( accueil = new Accueil( pages ) );
     pages->addWidget( jeuLibre = new JeuLibre( pages ) );
     pages->addWidget( ent1 = new EntrainementPage1( pages ) );
     pages->addWidget( entFacile = new EntrainementFacile( pages ) );
+    pages->addWidget(cours = new Cours(pages));
 
 
 

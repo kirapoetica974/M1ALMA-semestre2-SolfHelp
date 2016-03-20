@@ -22,9 +22,8 @@ SOURCES += main.cpp\
     clavierpiano.cpp \
     entrainementpage1.cpp \
     note.cpp \
-    portee.cpp \
-    placenote.cpp \
-    entrainementfacile.cpp
+    entrainementfacile.cpp \
+    cours.cpp
 
 HEADERS  += fenetre.h \
     accueil.h \
@@ -33,8 +32,7 @@ HEADERS  += fenetre.h \
     entrainementpage1.h \
     entrainementfacile.h \
     note.h \
-    portee.h \
-    placenote.h
+    cours.h
 
 RESOURCES += \
     image.qrc

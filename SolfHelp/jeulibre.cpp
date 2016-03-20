@@ -30,16 +30,15 @@ JeuLibre::JeuLibre(QStackedWidget *p) : QWidget()
     // On insère le clavier
     clavier = new ClavierPiano(xTouche,yTouche,largeurDeTouche,hauteurDeTouche,chemin, this);
 
-    QPixmap pix(":/img/img/b_accueil.gif");
+    QPixmap pix(":/img/img/home.png");
     QIcon buttonIcon(pix);
     accueil = new QPushButton("Accueil",this);
     accueil->setIcon(buttonIcon);
 
-    accueil->setGeometry(520,5, 50,50);
-    accueil->setIconSize(accueil->size());
+    accueil->setGeometry(530,5, 40,40);
+    QSize size(30,30);
+    accueil->setIconSize(size);
     accueil->setText("");
-    accueil->setStyleSheet("border:none");
-    accueil->setFocusPolicy(Qt::NoFocus);
 
 
     connect(accueil, SIGNAL(clicked()), this, SLOT(goAccueil()));

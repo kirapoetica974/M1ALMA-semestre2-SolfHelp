@@ -3,7 +3,6 @@
 
 #include <QWidget>
 #include <QStackedWidget>
-#include <portee.h>
 #include <clavierpiano.h>
 #include <QVector>
 #include <note.h>
@@ -49,7 +48,6 @@ public slots:
 
 private:
     QStackedWidget *pages;
-    Portee *portee;
 
     ClavierPiano *piano;
 
@@ -57,6 +55,7 @@ private:
     QPushButton *accueil;
     QPushButton *go;
     QPushButton *retour;
+    QPushButton *imgTimer;
 
     QVector<Note*> *tabNotes;
     QVector<Note*> *tabReponse;
@@ -82,6 +81,8 @@ private:
     void partieTerminee();
 
     void ecrireLog(QString s);
+
+    void effacerNomTouche();
 };
 
 #endif // ENTRAINEMENTFACILE_H

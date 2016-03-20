@@ -28,16 +28,16 @@ ClavierPiano::ClavierPiano(qreal xTouche, qreal yTouche, qreal largeurTouche, qr
     la2 = new QPushButton("la",widget);
     si2 = new QPushButton("si",widget);
 
-    domD = new QPushButton("do#",widget);
-    doMD = new QPushButton("do#",widget);
-    remD = new QPushButton("re#",widget);
-    reMD = new QPushButton("re#",widget);
-    famD = new QPushButton("fa#",widget);
-    faMD = new QPushButton("fa#",widget);
-    solmD = new QPushButton("sol#",widget);
-    solMD = new QPushButton("sol#",widget);
-    lamD = new QPushButton("la#",widget);
-    laMD = new QPushButton("la#",widget);
+    domD = new QPushButton("",widget);
+    doMD = new QPushButton("",widget);
+    remD = new QPushButton("",widget);
+    reMD = new QPushButton("",widget);
+    famD = new QPushButton("",widget);
+    faMD = new QPushButton("",widget);
+    solmD = new QPushButton("",widget);
+    solMD = new QPushButton("",widget);
+    lamD = new QPushButton("",widget);
+    laMD = new QPushButton("",widget);
 
 
     do1->setGeometry(xTouche, yTouche, largeurTouche, hauteurTouche);
@@ -71,6 +71,8 @@ ClavierPiano::ClavierPiano(qreal xTouche, qreal yTouche, qreal largeurTouche, qr
     solmD->setGeometry((xTouche+(11*largeurTouche))+(0.6*largeurTouche), yTouche, largeurToucheNoire, hauteurToucheNoire);
     lamD->setGeometry((xTouche+(12*largeurTouche))+(0.6*largeurTouche), yTouche, largeurToucheNoire, hauteurToucheNoire);
 
+
+    //raccourci pour les notes
     do1->setShortcut((tr("a")));
     re1->setShortcut((tr("z")));
     mi1->setShortcut((tr("e")));

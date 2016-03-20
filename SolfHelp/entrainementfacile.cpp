@@ -5,7 +5,6 @@
 #include <QtXml>
 #include <iostream>
 #include <QDebug>
-#include "placenote.h"
 #include <QGraphicsScene>
 #include <QGraphicsView>
 #include <QFile>
@@ -17,7 +16,6 @@ EntrainementFacile::EntrainementFacile(QStackedWidget *p) : QWidget()
 
     resize(600,500);
     pages = p;
-    portee = new Portee(this);
 
     // 1 seconde = 4000
     tempsReel=0;
@@ -31,14 +29,6 @@ EntrainementFacile::EntrainementFacile(QStackedWidget *p) : QWidget()
     enJeu = false;
 
 
-    //Initialisation du Qtimer
-    timer = new QTimer(this);
-    //timer->setInterval(1000);
-    labelTimer = new QLabel("15",this);
-    labelTimer->setGeometry(100,10,50,20);
-
-
-
     // Largeur de la fenetre de l'application
     qreal largeur = size().width();
     // hauteur de la fenetre de l'application
@@ -47,7 +37,25 @@ EntrainementFacile::EntrainementFacile(QStackedWidget *p) : QWidget()
     qreal largeurDeTouche = (largeur - 60)/14;
     qreal hauteurDeTouche = (hauteur*40)/100;
     qreal xTouche = 20;
-    qreal yTouche = hauteur/2;
+    qreal yTouche = 270;
+
+
+    //Initialisation du Qtimer
+    QSize siz(40,40);
+    imgTimer = new QPushButton(this);
+    imgTimer->setGeometry(350, 220, 40, 40);
+    QPixmap pic(":/img/img/time.png");
+    QIcon buttonIco(pic);
+    imgTimer->setIcon(buttonIco);
+    imgTimer->setIconSize(siz);
+    imgTimer->setStyleSheet("border:none");
+    imgTimer->setFocusPolicy(Qt::NoFocus);
+    imgTimer->setVisible(false);
+
+    timer = new QTimer(this);
+    labelTimer = new QLabel("<strong>10</strong>",this);
+    labelTimer->setGeometry(363, 224, 40, 40);
+    labelTimer->setVisible(false);
 
 
     // Insertion du piano avec les touches non cliquables
@@ -80,39 +88,47 @@ EntrainementFacile::EntrainementFacile(QStackedWidget *p) : QWidget()
     piano->si2->setEnabled(false);
 
 
+    QSize size(30,30);
+
     // Ajout du bouton d'accueil
-    QPixmap pix(":/img/img/b_accueil.gif");
+    QPixmap pix(":/img/img/home.png");
     QIcon buttonIcon(pix);
     accueil = new QPushButton("Accueil",this);
     accueil->setIcon(buttonIcon);
-    accueil->setGeometry(520,5, 50,50);
-    accueil->setIconSize(accueil->size());
+    accueil->setGeometry(530,5, 40,40);
+    accueil->setIconSize(size);
     accueil->setText("");
-    accueil->setStyleSheet("border:none");
-    accueil->setFocusPolicy(Qt::NoFocus);
     connect(accueil, SIGNAL(clicked()), this, SLOT(goAccueil()));
 
     // Ajout du bouton retour
+    QPixmap pix2(":/img/img/arrows.png");
+    QIcon buttonIcon2(pix2);
     retour = new QPushButton("Retour", this);
-    retour->setGeometry(10,5,50,50);
+    retour->setIcon(buttonIcon2);
+    retour->setGeometry(10,5,40,40);
+    retour->setIconSize(size);
+    retour->setText("");
+    //retour->setStyleSheet("border:none");
+    //retour->setFocusPolicy(Qt::NoFocus);
     connect(retour,SIGNAL(clicked()),this,SLOT(precedent()));
 
 
     // Ajout du label ou sera écrit les réponses (il sera invisible jusqu'à la fin)
     labelReponse = new QTextEdit(this);
-    labelReponse->setGeometry(10,175,largeur-20,60);
+    labelReponse->setGeometry(10,150,largeur-20,60);
     labelReponse->setVisible(false);
     labelReponse->setEnabled(false);
 
 
     //ajout de la clé de sol a la portée
     QSvgWidget *cleSol = new QSvgWidget(":/img/G-clef.svg", this);
-    cleSol->setGeometry(70,56,60,120);
+    cleSol->setGeometry(70,28,60,120);
 
 
     //Ajout du bouton commencer
     go = new QPushButton("Commencer",this);
-    go->setGeometry(250, 0, 100, 40);
+    go->setGeometry(240, 220, 100, 40);
+
     connect(go,SIGNAL(pressed()),this,SLOT(commencer()));
 }
 
@@ -125,7 +141,7 @@ void EntrainementFacile::compter(){
     }
     else{
         tempsRestant--;
-        labelTimer->setText(QString::number(tempsRestant));
+        labelTimer->setText("<strong>"+QString::number(tempsRestant)+"</strong>");
         update();
     }
 
@@ -144,8 +160,8 @@ void EntrainementFacile::precedent(){
     tabReponse = new QVector<Note*>();
     timer->stop();
     timer = new QTimer();
-    labelTimer->setText("15");
-    tempsRestant = 15;
+    labelTimer->setText("<strong>10</strong>");
+    tempsRestant = 10;
     go->setText("Commencer");
     go->setEnabled(true);
     go->setVisible(true);
@@ -157,8 +173,8 @@ void EntrainementFacile::commencer(){
     ecrireLog("Début de l'entrainement");
 
     if(difficulte == "difficile"){
-        labelTimer->setText("15");
-        tempsRestant = 15;
+        labelTimer->setText("<strong>10</strong>");
+        tempsRestant = 10;
         timer = new QTimer();
         connect(timer, SIGNAL(timeout()),this, SLOT(compter()));
         timer->setInterval(1000);
@@ -327,8 +343,8 @@ void EntrainementFacile::goAccueil(){
     tabReponse = new QVector<Note*>();
     timer->stop();
     timer = new QTimer();
-    labelTimer->setText("15");
-    tempsRestant = 15;
+    labelTimer->setText("<strong>10</strong>");
+    tempsRestant = 10;
     go->setText("Commencer");
     go->setEnabled(true);
     go->setVisible(true);
@@ -372,8 +388,6 @@ void EntrainementFacile::chargerPartition(QString fichier){
         if(elm.isElement())
         {
             QDomElement e = elm.toElement();
-            //qDebug() << e.attribute("nom");
-           // qDebug() << e.attribute("hauteur");
             QString nom = e.attribute("nom");
             QString hauteur = e.attribute("hauteur");
             n = new Note(nom, hauteur);
@@ -392,6 +406,12 @@ void EntrainementFacile::paintEvent(QPaintEvent* e){
     QVector<QString> *config = new QVector<QString>();
 
     update();
+
+    if(difficulte=="difficile"){
+        labelTimer->setVisible(true);
+        imgTimer->setVisible(true);
+        effacerNomTouche();
+    }
 
     QString fileName = "temp.txt";
     QFile fichier(fileName);
@@ -417,7 +437,7 @@ void EntrainementFacile::paintEvent(QPaintEvent* e){
 
     //Coordonnées du début de la ligne
     qreal xDebutLigne = (largeur*10)/100;
-    qreal yDebutLigne = (largeur*10)/100;
+    qreal yDebutLigne = 30;
 
     // longueur de la ligne en fonction de l'ecran
     qreal longueurLigne = largeur-((largeur*10)/100);
@@ -437,7 +457,6 @@ void EntrainementFacile::paintEvent(QPaintEvent* e){
 
         if(difficulte=="difficile" && tempsRestant == 0){
             partieTerminee();
-            //labelReponse->setVisible(true);
         }
 
         if(tabReponse->size() != tabNotes->size()){
@@ -464,8 +483,8 @@ void EntrainementFacile::paintEvent(QPaintEvent* e){
             }
         }
         else{
-            labelReponse->setVisible(false);
-            update();
+            //labelReponse->setVisible(false);
+            //update();
         }
 
 
@@ -643,7 +662,23 @@ void EntrainementFacile::ecrireLog(QString s){
 
     QTextStream flux(&file);
     flux << "\n"<< st << s;
+}
 
+void EntrainementFacile::effacerNomTouche(){
+    piano->do1->setText("");
+    piano->do2->setText("");
+    piano->re1->setText("");
+    piano->re2->setText("");
+    piano->mi1->setText("");
+    piano->mi2->setText("");
+    piano->fa1->setText("");
+    piano->fa2->setText("");
+    piano->sol1->setText("");
+    piano->sol2->setText("");
+    piano->la1->setText("");
+    piano->la2->setText("");
+    piano->si1->setText("");
+    piano->si2->setText("");
 }
 
 

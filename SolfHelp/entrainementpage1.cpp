@@ -23,6 +23,10 @@ EntrainementPage1::EntrainementPage1(QStackedWidget *p) :QWidget()
     qreal largeurBouton = largeur - 220;
     qreal hauteurBouton = (hauteur*10)/100;
 
+
+    labelChoix = new QLabel("Choix de la partition : ",this);
+    labelChoix->setGeometry(xBouton+120, yBouton-40, largeurBouton, hauteurBouton);
+
     //liste déroulante correspondant au choix de la partition
     listePartition = new QComboBox(this);
     //listePartition->addItem("Choix de la partition");
@@ -44,13 +48,15 @@ EntrainementPage1::EntrainementPage1(QStackedWidget *p) :QWidget()
 
 
 
+    labelDifficulte = new QLabel("Choix de la difficulté :", this);
+    labelDifficulte->setGeometry(xBouton+120, (yBouton+(2.5*hauteurBouton))-40, largeurBouton, hauteurBouton);
 
     // Boutons correspondants aux modes de jeu
     facile = new QPushButton("Facile", this);
     difficile =new QPushButton("Difficile", this);
 
-    facile->setGeometry(xBouton, yBouton+(2*hauteurBouton), largeurBouton, hauteurBouton);
-    difficile->setGeometry(xBouton, yBouton+(3*hauteurBouton), largeurBouton, hauteurBouton);
+    facile->setGeometry(xBouton, yBouton+(2.5*hauteurBouton), largeurBouton, hauteurBouton);
+    difficile->setGeometry(xBouton, yBouton+(3.5*hauteurBouton), largeurBouton, hauteurBouton);
 
     facile->setEnabled(false);
     difficile->setEnabled(false);
@@ -60,16 +66,16 @@ EntrainementPage1::EntrainementPage1(QStackedWidget *p) :QWidget()
 
 
     // Bouton d'accueil
-    QPixmap pix(":/img/img/b_accueil.gif");
+    QPixmap pix(":/img/img/home.png");
     QIcon buttonIcon(pix);
     accueil = new QPushButton("Accueil",this);
     accueil->setIcon(buttonIcon);
 
-    accueil->setGeometry(520,5, 50,50);
-    accueil->setIconSize(accueil->size());
+    accueil->setGeometry(530,5, 40,40);
+    QSize size(30,30);
+    accueil->setIconSize(size);
     accueil->setText("");
-    accueil->setStyleSheet("border:none");
-    accueil->setFocusPolicy(Qt::NoFocus);
+
 
     connect(accueil, SIGNAL(clicked()), this, SLOT(goAccueil()));
 }
