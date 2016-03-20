@@ -26,11 +26,11 @@ Accueil::Accueil(QStackedWidget *p) : QWidget()
     // On récupère le tableau de pages
     pages = p;
 
-    QPixmap pix(":/img/img/notes-de-musique.png");
+    QPixmap pix(":/img/img/logo.png");
     QLabel *label = new QLabel(this);
-    QPixmap pix2=pix.scaled(QSize(200,200),Qt::IgnoreAspectRatio);
+    QPixmap pix2=pix.scaled(QSize(276,150),Qt::IgnoreAspectRatio);
     label->setPixmap(pix2);
-    label->setGeometry(200,-20,200,200);
+    label->setGeometry(150,0,276,150);
     //label->setStyleSheet("background:transparent;");
 
 

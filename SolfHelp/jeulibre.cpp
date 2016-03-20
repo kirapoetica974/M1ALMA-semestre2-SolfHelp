@@ -4,6 +4,7 @@
 #include <QPixmap>
 #include <QFile>
 #include <QDateTime>
+#include <QLabel>
 
 JeuLibre::JeuLibre(QStackedWidget *p) : QWidget()
 {
@@ -12,6 +13,12 @@ JeuLibre::JeuLibre(QStackedWidget *p) : QWidget()
     resize(600,500);
    // On récupère le tableau de pages
     pages = p;
+
+    QPixmap pic(":/img/img/logo.png");
+    QLabel *label = new QLabel(this);
+    QPixmap pix2=pic.scaled(QSize(276,150),Qt::IgnoreAspectRatio);
+    label->setPixmap(pix2);
+    label->setGeometry(150,0,276,150);
 
     // Largeur de la fenetre de l'application
     qreal largeur = size().width();

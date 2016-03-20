@@ -166,7 +166,7 @@ void EntrainementFacile::precedent(){
     go->setEnabled(true);
     go->setVisible(true);
     tabNotes = new QVector<Note*>();
-    pages->setCurrentIndex(2);
+    pages->setCurrentIndex( pages->currentIndex() - 1);
 }
 
 void EntrainementFacile::commencer(){

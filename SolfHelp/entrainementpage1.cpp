@@ -3,6 +3,7 @@
 #include "entrainementfacile.h"
 #include <QFile>
 #include <QDateTime>
+#include <QPixmap>
 
 EntrainementPage1::EntrainementPage1(QStackedWidget *p) :QWidget()
 {
@@ -10,6 +11,11 @@ EntrainementPage1::EntrainementPage1(QStackedWidget *p) :QWidget()
     pages = p;
 
 
+    QPixmap pic(":/img/img/logo.png");
+    QLabel *label = new QLabel(this);
+    QPixmap pix2=pic.scaled(QSize(276,150),Qt::IgnoreAspectRatio);
+    label->setPixmap(pix2);
+    label->setGeometry(150,0,276,150);
 
     //INITIALISATION DE CONSTANTES POUR LA DIMENSION DES BOUTONS
     // Largeur de la fenetre de l'application

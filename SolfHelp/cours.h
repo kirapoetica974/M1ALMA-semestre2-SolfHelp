@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QScrollArea>
 #include <QStackedWidget>
+#include <QPushButton>
 
 class Cours : public QWidget
 {
@@ -14,10 +15,14 @@ public:
 signals:
     
 public slots:
-
+    void goAccueil();
+    void precedent();
 
 private:
     QScrollArea *area;
+    QPushButton *accueil;
+    QPushButton *retour;
+    QStackedWidget * pages;
     
 };
 
