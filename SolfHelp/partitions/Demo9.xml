@@ -1,0 +1,8 @@
+<partition name="Demo1">
+	<note nom="mi" hauteur="majeur"/>
+	<note nom="la" hauteur="majeur"/>
+	<note nom="mi" hauteur="mineur"/>
+	<note nom="si" hauteur="mineur"/>
+	<note nom="la" hauteur="mineur"/>
+	<note nom="do" hauteur="mineur"/>
+</partition>
