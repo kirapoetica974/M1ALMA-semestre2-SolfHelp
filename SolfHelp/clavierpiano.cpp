@@ -6,11 +6,9 @@
 #include <QFile>
 #include <QDateTime>
 
-ClavierPiano::ClavierPiano(qreal xTouche, qreal yTouche, qreal largeurTouche, qreal hauteurTouche, QString *chemin, QWidget *widget) : QWidget()
+ClavierPiano::ClavierPiano(qreal xTouche, qreal yTouche, qreal largeurTouche, qreal hauteurTouche, QWidget *widget) : QWidget()
 {
     resize(600,500);
-    chem = new QString();
-    chem->append(chemin);
     w = widget;
 
     do1 = new QPushButton("do",widget);
@@ -171,10 +169,6 @@ ClavierPiano::ClavierPiano(qreal xTouche, qreal yTouche, qreal largeurTouche, qr
     connect(lamD, SIGNAL(pressed()),this, SLOT(on_pushButtonLamD_clicked()));
     connect(laMD, SIGNAL(pressed()),this, SLOT(on_pushButtonLaMD_clicked()));
 
-}
-
-void ClavierPiano::clic(){
-    qDebug() << "J'ai cliqué sur la touche";
 }
 
 void ClavierPiano::on_pushButtonDom_clicked()

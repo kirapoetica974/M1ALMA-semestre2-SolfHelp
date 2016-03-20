@@ -35,7 +35,7 @@ JeuLibre::JeuLibre(QStackedWidget *p) : QWidget()
 
 
     // On insère le clavier
-    clavier = new ClavierPiano(xTouche,yTouche,largeurDeTouche,hauteurDeTouche,chemin, this);
+    clavier = new ClavierPiano(xTouche,yTouche,largeurDeTouche,hauteurDeTouche, this);
 
     QPixmap pix(":/img/img/home.png");
     QIcon buttonIcon(pix);
@@ -46,6 +46,7 @@ JeuLibre::JeuLibre(QStackedWidget *p) : QWidget()
     QSize size(30,30);
     accueil->setIconSize(size);
     accueil->setText("");
+    accueil->setToolTip("Accueil");
 
 
     connect(accueil, SIGNAL(clicked()), this, SLOT(goAccueil()));

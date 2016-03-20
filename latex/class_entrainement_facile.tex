@@ -1,0 +1,503 @@
+\section{Référence de la classe Entrainement\-Facile}
+\label{class_entrainement_facile}\index{Entrainement\-Facile@{Entrainement\-Facile}}
+Graphe d'héritage de Entrainement\-Facile\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_entrainement_facile}
+\end{center}
+\end{figure}
+\subsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf go\-Accueil} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d'aller sur la fenetre d'accueil. \end{DoxyCompactList}\item 
+void {\bf appui\-Do1} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui déclenche le traitement de la touche do mineur. \end{DoxyCompactList}\item 
+void {\bfseries appui\-Do2} ()\label{class_entrainement_facile_afc632a43affef76c28967b624c59a781}
+
+\item 
+void {\bf appui\-Re1} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui déclenche le traitement de la touche re mineur. \end{DoxyCompactList}\item 
+void {\bf appui\-Re2} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui déclenche le traitement de la touche re majeur. \end{DoxyCompactList}\item 
+void {\bf appui\-Mi1} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui déclenche le traitement de la touche mi mineur. \end{DoxyCompactList}\item 
+void {\bf appui\-Mi2} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui déclenche le traitement de la touche mi majeur. \end{DoxyCompactList}\item 
+void {\bf appui\-Fa1} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui déclenche le traitement de la touche fa mineur. \end{DoxyCompactList}\item 
+void {\bf appui\-Fa2} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui déclenche le traitement de la touche fa majeur. \end{DoxyCompactList}\item 
+void {\bf appui\-Sol1} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui déclenche le traitement de la touche sol mineur. \end{DoxyCompactList}\item 
+void {\bf appui\-Sol2} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui déclenche le traitement de la touche sol majeur. \end{DoxyCompactList}\item 
+void {\bf appui\-La1} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui déclenche le traitement de la touche la mineur. \end{DoxyCompactList}\item 
+void {\bf appui\-La2} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui déclenche le traitement de la touche la majeur. \end{DoxyCompactList}\item 
+void {\bf appui\-Si1} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui déclenche le traitement de la touche si mineur. \end{DoxyCompactList}\item 
+void {\bf appui\-Si2} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui déclenche le traitement de la touche si majeur. \end{DoxyCompactList}\item 
+void {\bf commencer} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui met la partie en place. \end{DoxyCompactList}\item 
+void {\bf precedent} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de retourner sur la page précédente. \end{DoxyCompactList}\item 
+void {\bf compter} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui permet le compte à rebours. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Entrainement\-Facile} (Q\-Stacked\-Widget $\ast$p)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+void {\bf paint\-Event} (Q\-Paint\-Event $\ast$e)
+\begin{DoxyCompactList}\small\item\em Fonction qui dessine en continue les éléments de l'interface. \end{DoxyCompactList}\item 
+void {\bf charger\-Partition} (Q\-String fichier)
+\begin{DoxyCompactList}\small\item\em Fonction qui transforme le fichier d'entrée en tableau de notes. \end{DoxyCompactList}\item 
+void {\bf placer\-Note} (Q\-Painter \&painter, qreal largeur, qreal hauteur, qreal x\-Debut\-Ligne, qreal y\-Debut\-Ligne, qreal x\-Debut\-Note, qreal espace\-Entre\-Ligne, Q\-String note, Q\-String hauteur\-N)
+\begin{DoxyCompactList}\small\item\em Fonction qui dessine une note. \end{DoxyCompactList}\item 
+void {\bf deconnection\-Des\-Touches} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui déconnecte les touches du clavier afin qu'il n'y ai plus d'action au clique de la souris. \end{DoxyCompactList}\item 
+void {\bf partie\-Terminee} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui fait la mise à jour de la fenetre lorsque l'entrainement se termine. \end{DoxyCompactList}\item 
+void {\bf ecrire\-Log} (Q\-String s)
+\begin{DoxyCompactList}\small\item\em Fonction qui ouvre le fichier de log afin d'y ajouter la chaine de caractère passée en paramètre. \end{DoxyCompactList}\item 
+void {\bf effacer\-Nom\-Touche} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui efface le nom des touches du clavier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!Entrainement\-Facile@{Entrainement\-Facile}}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{Entrainement\-Facile}]{\setlength{\rightskip}{0pt plus 5cm}Entrainement\-Facile\-::\-Entrainement\-Facile (
+\begin{DoxyParamCaption}
+\item[{Q\-Stacked\-Widget $\ast$}]{pages}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_entrainement_facile_a7866def70a3208e3676c0f64a9a6f78f}
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em pages} & Pointeur sur la structure de donnée contenant l'ensemble des fenetre, ne peut etre N\-U\-L\-L \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!appui\-Do1@{appui\-Do1}}
+\index{appui\-Do1@{appui\-Do1}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{appui\-Do1}]{\setlength{\rightskip}{0pt plus 5cm}void Entrainement\-Facile\-::appui\-Do1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_entrainement_facile_a4f712bbc9e0f50e66f494c916530189d}
+
+
+Fonction qui déclenche le traitement de la touche do mineur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!appui\-Fa1@{appui\-Fa1}}
+\index{appui\-Fa1@{appui\-Fa1}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{appui\-Fa1}]{\setlength{\rightskip}{0pt plus 5cm}void Entrainement\-Facile\-::appui\-Fa1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_entrainement_facile_a6785c6a1a9491e1ed7c4fb0daad2c54f}
+
+
+Fonction qui déclenche le traitement de la touche fa mineur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!appui\-Fa2@{appui\-Fa2}}
+\index{appui\-Fa2@{appui\-Fa2}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{appui\-Fa2}]{\setlength{\rightskip}{0pt plus 5cm}void Entrainement\-Facile\-::appui\-Fa2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_entrainement_facile_a51e1165f76cf6cc7b5e092385a3a892c}
+
+
+Fonction qui déclenche le traitement de la touche fa majeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!appui\-La1@{appui\-La1}}
+\index{appui\-La1@{appui\-La1}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{appui\-La1}]{\setlength{\rightskip}{0pt plus 5cm}void Entrainement\-Facile\-::appui\-La1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_entrainement_facile_adb0b4da5500d3dd4a691b867ed0d28b0}
+
+
+Fonction qui déclenche le traitement de la touche la mineur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!appui\-La2@{appui\-La2}}
+\index{appui\-La2@{appui\-La2}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{appui\-La2}]{\setlength{\rightskip}{0pt plus 5cm}void Entrainement\-Facile\-::appui\-La2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_entrainement_facile_a523bae690487d2694829a3c16ff4afab}
+
+
+Fonction qui déclenche le traitement de la touche la majeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!appui\-Mi1@{appui\-Mi1}}
+\index{appui\-Mi1@{appui\-Mi1}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{appui\-Mi1}]{\setlength{\rightskip}{0pt plus 5cm}void Entrainement\-Facile\-::appui\-Mi1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_entrainement_facile_a338149b217a871190896940cceb40dfa}
+
+
+Fonction qui déclenche le traitement de la touche mi mineur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!appui\-Mi2@{appui\-Mi2}}
+\index{appui\-Mi2@{appui\-Mi2}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{appui\-Mi2}]{\setlength{\rightskip}{0pt plus 5cm}void Entrainement\-Facile\-::appui\-Mi2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_entrainement_facile_addd87ab720ba1733862415f426b411dc}
+
+
+Fonction qui déclenche le traitement de la touche mi majeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!appui\-Re1@{appui\-Re1}}
+\index{appui\-Re1@{appui\-Re1}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{appui\-Re1}]{\setlength{\rightskip}{0pt plus 5cm}void Entrainement\-Facile\-::appui\-Re1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_entrainement_facile_a46f4bee3e18808bf287510e9b27e06ae}
+
+
+Fonction qui déclenche le traitement de la touche re mineur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!appui\-Re2@{appui\-Re2}}
+\index{appui\-Re2@{appui\-Re2}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{appui\-Re2}]{\setlength{\rightskip}{0pt plus 5cm}void Entrainement\-Facile\-::appui\-Re2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_entrainement_facile_ac5b5e52a23219ad8924bb86565bffac7}
+
+
+Fonction qui déclenche le traitement de la touche re majeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!appui\-Si1@{appui\-Si1}}
+\index{appui\-Si1@{appui\-Si1}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{appui\-Si1}]{\setlength{\rightskip}{0pt plus 5cm}void Entrainement\-Facile\-::appui\-Si1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_entrainement_facile_a08600d1e9b5fc9150ad7958fe4a162b8}
+
+
+Fonction qui déclenche le traitement de la touche si mineur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!appui\-Si2@{appui\-Si2}}
+\index{appui\-Si2@{appui\-Si2}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{appui\-Si2}]{\setlength{\rightskip}{0pt plus 5cm}void Entrainement\-Facile\-::appui\-Si2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_entrainement_facile_a766e275dbdd993883ed90b282c6d8ebe}
+
+
+Fonction qui déclenche le traitement de la touche si majeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!appui\-Sol1@{appui\-Sol1}}
+\index{appui\-Sol1@{appui\-Sol1}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{appui\-Sol1}]{\setlength{\rightskip}{0pt plus 5cm}void Entrainement\-Facile\-::appui\-Sol1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_entrainement_facile_a0300b93cfead2956432d560d614b4788}
+
+
+Fonction qui déclenche le traitement de la touche sol mineur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!appui\-Sol2@{appui\-Sol2}}
+\index{appui\-Sol2@{appui\-Sol2}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{appui\-Sol2}]{\setlength{\rightskip}{0pt plus 5cm}void Entrainement\-Facile\-::appui\-Sol2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_entrainement_facile_a1456556663003da5f9e42381fd263a8d}
+
+
+Fonction qui déclenche le traitement de la touche sol majeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!charger\-Partition@{charger\-Partition}}
+\index{charger\-Partition@{charger\-Partition}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{charger\-Partition}]{\setlength{\rightskip}{0pt plus 5cm}void Entrainement\-Facile\-::charger\-Partition (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{fichier}
+\end{DoxyParamCaption}
+)}\label{class_entrainement_facile_a9cf1e3eb47f58fbb9a1ef5778892217f}
+
+
+Fonction qui transforme le fichier d'entrée en tableau de notes. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em fichier} & Chemin du fichier xml dans lequel se trouve la partition (doit obligatoirement contenir l'extension .xml) \\
+\hline
+\end{DoxyParams}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!commencer@{commencer}}
+\index{commencer@{commencer}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{commencer}]{\setlength{\rightskip}{0pt plus 5cm}void Entrainement\-Facile\-::commencer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_entrainement_facile_a3b86785bc5c472f2addd86d6a5f23d58}
+
+
+Fonction qui met la partie en place. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!compter@{compter}}
+\index{compter@{compter}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{compter}]{\setlength{\rightskip}{0pt plus 5cm}void Entrainement\-Facile\-::compter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_entrainement_facile_a0d7f12a81700164a4fdb61b70ad64a5c}
+
+
+Fonction qui permet le compte à rebours. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!deconnection\-Des\-Touches@{deconnection\-Des\-Touches}}
+\index{deconnection\-Des\-Touches@{deconnection\-Des\-Touches}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{deconnection\-Des\-Touches}]{\setlength{\rightskip}{0pt plus 5cm}void Entrainement\-Facile\-::deconnection\-Des\-Touches (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_entrainement_facile_a04968328b30dba701185f6cb29ebd686}
+
+
+Fonction qui déconnecte les touches du clavier afin qu'il n'y ai plus d'action au clique de la souris. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!ecrire\-Log@{ecrire\-Log}}
+\index{ecrire\-Log@{ecrire\-Log}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{ecrire\-Log}]{\setlength{\rightskip}{0pt plus 5cm}void Entrainement\-Facile\-::ecrire\-Log (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{s}
+\end{DoxyParamCaption}
+)}\label{class_entrainement_facile_a0e38dc4bbe05055ebb9a35e0f7535a4e}
+
+
+Fonction qui ouvre le fichier de log afin d'y ajouter la chaine de caractère passée en paramètre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em s} & une chaine de type Q\-String qui sera écrite dans le fichier log, ne peut etre N\-U\-L\-L \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!effacer\-Nom\-Touche@{effacer\-Nom\-Touche}}
+\index{effacer\-Nom\-Touche@{effacer\-Nom\-Touche}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{effacer\-Nom\-Touche}]{\setlength{\rightskip}{0pt plus 5cm}Entrainement\-Facile\-::effacer\-Nom\-Touche (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_entrainement_facile_a73124bc24183522222fc149ccc36d6e9}
+
+
+Fonction qui efface le nom des touches du clavier. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!go\-Accueil@{go\-Accueil}}
+\index{go\-Accueil@{go\-Accueil}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{go\-Accueil}]{\setlength{\rightskip}{0pt plus 5cm}void Entrainement\-Facile\-::go\-Accueil (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_entrainement_facile_a84997812d2a67a40a4eab8a05b264438}
+
+
+Fonction qui permet d'aller sur la fenetre d'accueil. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!paint\-Event@{paint\-Event}}
+\index{paint\-Event@{paint\-Event}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{paint\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Entrainement\-Facile\-::paint\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Paint\-Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\label{class_entrainement_facile_a3b777c927b35947416d98ad7144fe1f8}
+
+
+Fonction qui dessine en continue les éléments de l'interface. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em e} & Evenement \\
+\hline
+\end{DoxyParams}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!partie\-Terminee@{partie\-Terminee}}
+\index{partie\-Terminee@{partie\-Terminee}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{partie\-Terminee}]{\setlength{\rightskip}{0pt plus 5cm}void Entrainement\-Facile\-::partie\-Terminee (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_entrainement_facile_a41da1ad2f2d2fc58a9a94f1e95fd7f05}
+
+
+Fonction qui fait la mise à jour de la fenetre lorsque l'entrainement se termine. 
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!placer\-Note@{placer\-Note}}
+\index{placer\-Note@{placer\-Note}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{placer\-Note}]{\setlength{\rightskip}{0pt plus 5cm}void Entrainement\-Facile\-::placer\-Note (
+\begin{DoxyParamCaption}
+\item[{Q\-Painter \&}]{painter, }
+\item[{qreal}]{largeur, }
+\item[{qreal}]{hauteur, }
+\item[{qreal}]{x\-Debut\-Ligne, }
+\item[{qreal}]{y\-Debut\-Ligne, }
+\item[{qreal}]{x\-Debut\-Note, }
+\item[{qreal}]{espace\-Entre\-Ligne, }
+\item[{Q\-String}]{note, }
+\item[{Q\-String}]{hauteur\-N}
+\end{DoxyParamCaption}
+)}\label{class_entrainement_facile_aa9bf53aa869146a1f4375eee0fc219a2}
+
+
+Fonction qui dessine une note. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \&painter} & le Q\-Painter sur lequel sera dessiné la note \\
+\hline
+{\em largeur} & largeur de la fenetre \\
+\hline
+{\em hauteur} & hauteur de la fenetre \\
+\hline
+{\em x\-Debut\-Ligne} & Coordonnée x de la premiere ligne de la portee \\
+\hline
+{\em y\-Debut\-Ligne} & Coordonnée y de la premiere ligne de la portee \\
+\hline
+{\em x\-Debut\-Note} & Coordonnée x de la ou va etre dessiné la note \\
+\hline
+{\em espace\-Entre\-Ligne} & Distance entre deux lignes de la portee \\
+\hline
+{\em note} & Nom de la note à dessiner \\
+\hline
+{\em hauteur\-N} & Hauteur de la note à dessiner\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\index{Entrainement\-Facile@{Entrainement\-Facile}!precedent@{precedent}}
+\index{precedent@{precedent}!EntrainementFacile@{Entrainement\-Facile}}
+\subsubsection[{precedent}]{\setlength{\rightskip}{0pt plus 5cm}void Entrainement\-Facile\-::precedent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_entrainement_facile_ae88750334f9bdb0d1736efa16116d2c3}
+
+
+Fonction qui permet de retourner sur la page précédente. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+entrainementfacile.\-h\item 
+entrainementfacile.\-cpp\end{DoxyCompactItemize}

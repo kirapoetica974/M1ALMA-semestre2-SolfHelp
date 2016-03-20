@@ -60,7 +60,7 @@ EntrainementFacile::EntrainementFacile(QStackedWidget *p) : QWidget()
 
     // Insertion du piano avec les touches non cliquables
     QString *chemin = new QString();
-    piano = new ClavierPiano(xTouche,yTouche,largeurDeTouche,hauteurDeTouche,chemin, this);
+    piano = new ClavierPiano(xTouche,yTouche,largeurDeTouche,hauteurDeTouche, this);
     piano->setEnabled(false);
     piano->do1->setEnabled(false);
     piano->do2->setEnabled(false);
@@ -98,6 +98,7 @@ EntrainementFacile::EntrainementFacile(QStackedWidget *p) : QWidget()
     accueil->setGeometry(530,5, 40,40);
     accueil->setIconSize(size);
     accueil->setText("");
+    accueil->setToolTip("Accueil");
     connect(accueil, SIGNAL(clicked()), this, SLOT(goAccueil()));
 
     // Ajout du bouton retour
@@ -108,8 +109,7 @@ EntrainementFacile::EntrainementFacile(QStackedWidget *p) : QWidget()
     retour->setGeometry(10,5,40,40);
     retour->setIconSize(size);
     retour->setText("");
-    //retour->setStyleSheet("border:none");
-    //retour->setFocusPolicy(Qt::NoFocus);
+    retour->setToolTip("Retour");
     connect(retour,SIGNAL(clicked()),this,SLOT(precedent()));
 
 

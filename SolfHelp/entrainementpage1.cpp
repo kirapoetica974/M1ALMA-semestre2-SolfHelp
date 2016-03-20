@@ -81,6 +81,7 @@ EntrainementPage1::EntrainementPage1(QStackedWidget *p) :QWidget()
     QSize size(30,30);
     accueil->setIconSize(size);
     accueil->setText("");
+    accueil->setToolTip("Accueil");
 
 
     connect(accueil, SIGNAL(clicked()), this, SLOT(goAccueil()));
@@ -152,7 +153,7 @@ void EntrainementPage1::goAccueil(){
 }
 
 
-void EntrainementPage1::paintEvent(QPaintEvent *){
+void EntrainementPage1::paintEvent(QPaintEvent *e){
     //listePartition->setCurrentIndex(0);
 }
 
