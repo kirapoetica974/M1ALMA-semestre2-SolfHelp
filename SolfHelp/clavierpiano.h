@@ -81,6 +81,8 @@ private:
     //      - 2 : Difficile
     qreal modeJeu;
 
+    void ecrireLog(QString s);
+
 
 };
 

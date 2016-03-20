@@ -10,6 +10,7 @@
 #include <QGraphicsScene>
 #include <QLabel>
 #include <QTextEdit>
+#include <QTimer>
 
 class EntrainementFacile : public QWidget
 {
@@ -40,6 +41,11 @@ public slots:
 
     void commencer();
 
+    void precedent();
+    void compter();
+
+    //void demarreTimer();
+
 
 private:
     QStackedWidget *pages;
@@ -50,11 +56,20 @@ private:
     QTextEdit *labelReponse;
     QPushButton *accueil;
     QPushButton *go;
+    QPushButton *retour;
+
     QVector<Note*> *tabNotes;
     QVector<Note*> *tabReponse;
     bool enJeu;
 
     QString nomPartition;
+    QString difficulte;
+
+    QTimer *timer;
+    QLabel *labelTimer;
+    int tempsRestant;
+    int tempsReel;
+    int nbBonneReponses;
 
     void paintEvent(QPaintEvent* e);
 
@@ -63,6 +78,10 @@ private:
     void placerNote(QPainter &painter, qreal largeur, qreal hauteur, qreal xDebutLigne, qreal yDebutLigne, qreal xDebutNote, qreal espaceEntreLigne, QString note, QString hauteurN);
 
     void deconnectionDesTouches();
+
+    void partieTerminee();
+
+    void ecrireLog(QString s);
 };
 
 #endif // ENTRAINEMENTFACILE_H

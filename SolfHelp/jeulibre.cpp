@@ -2,6 +2,8 @@
 #include <QString>
 #include <iostream>
 #include <QPixmap>
+#include <QFile>
+#include <QDateTime>
 
 JeuLibre::JeuLibre(QStackedWidget *p) : QWidget()
 {
@@ -44,11 +46,29 @@ JeuLibre::JeuLibre(QStackedWidget *p) : QWidget()
 }
 
 void JeuLibre::goAccueil(){
+    ecrireLog("Clic sur Accueil");
     pages->setCurrentIndex(0);
 }
 
 JeuLibre::~JeuLibre(){
 
+}
+
+void JeuLibre::ecrireLog(QString s){
+    QString fileName = "../log.txt";
+    QFile file(fileName);
+    if (!file.open(QIODevice::Append | QIODevice::Text)){
+        qDebug() << "impossible d'ouvir le fichier";
+        return;
+    }
+
+    QDateTime d = QDateTime::currentDateTime();
+    QString st = d.toString("dd-MM-yyyy  hh:mm:ss  ");
+
+    QTextStream flux(&file);
+    flux << "\n"<< st << s;
+
+    file.close();
 }
 
 

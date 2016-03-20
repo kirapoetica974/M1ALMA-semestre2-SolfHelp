@@ -3,6 +3,9 @@
 #include <QColor>
 #include <QSound>
 
+#include <QFile>
+#include <QDateTime>
+
 ClavierPiano::ClavierPiano(qreal xTouche, qreal yTouche, qreal largeurTouche, qreal hauteurTouche, QString *chemin, QWidget *widget) : QWidget()
 {
     resize(600,500);
@@ -175,90 +178,112 @@ void ClavierPiano::clic(){
 void ClavierPiano::on_pushButtonDom_clicked()
 {
     QSound::play("../SonNote/dom.wav");
+    ecrireLog("clic sur Dom");
 }
 
 void ClavierPiano::on_pushButtonDoM_clicked(){
     QSound::play("../SonNote/doM.wav");
+    ecrireLog("clic sur DoM");
 }
 
 void ClavierPiano::on_pushButtonRem_clicked(){
     QSound::play("../SonNote/rem.wav");
+    ecrireLog("clic sur Rem");
 }
 
 void ClavierPiano::on_pushButtonReM_clicked(){
    QSound::play("../SonNote/reM.wav");
+   ecrireLog("clic sur ReM");
 }
 
 void ClavierPiano::on_pushButtonMim_clicked(){
     QSound::play("../SonNote/mim.wav");
+    ecrireLog("clic sur Mim");
 }
 
 void ClavierPiano::on_pushButtonMiM_clicked(){
     QSound::play("../SonNote/miM.wav");
+    ecrireLog("clic sur MiM");
 }
 
 void ClavierPiano::on_pushButtonFam_clicked(){
     QSound::play("../SonNote/fam.wav");
+    ecrireLog("clic sur Fam");
 }
 
 void ClavierPiano::on_pushButtonFaM_clicked(){
     QSound::play("../SonNote/faM.wav");
+    ecrireLog("clic sur FaM");
 }
 
 void ClavierPiano::on_pushButtonSolm_clicked(){
     QSound::play("../SonNote/solm.wav");
+    ecrireLog("clic sur Solm");
 }
 
 void ClavierPiano::on_pushButtonSolM_clicked(){
     QSound::play("../SonNote/solM.wav");
+    ecrireLog("clic sur SolM");
 }
 
 void ClavierPiano::on_pushButtonLam_clicked(){
     QSound::play("../SonNote/lam.wav");
+    ecrireLog("clic sur Lam");
 }
 
 void ClavierPiano::on_pushButtonLaM_clicked(){
     QSound::play("../SonNote/laM.wav");
+    ecrireLog("clic sur LaM");
 }
 
 void ClavierPiano::on_pushButtonSim_clicked(){
     QSound::play("../SonNote/sim.wav");
+    ecrireLog("clic sur Sim");
 }
 
 void ClavierPiano::on_pushButtonSiM_clicked(){
     QSound::play("../SonNote/siM.wav");
+    ecrireLog("clic sur SiM");
 }
 
 void ClavierPiano::on_pushButtonDomD_clicked(){
     QSound::play("../SonNote/domD.wav");
+    ecrireLog("clic sur DomD");
 }
 
 void ClavierPiano::on_pushButtonDoMD_clicked(){
     QSound::play("../SonNote/doMD.wav");
+    ecrireLog("clic sur DoMD");
 }
 
 void ClavierPiano::on_pushButtonRemD_clicked(){
     QSound::play("../SonNote/remD.wav");
+    ecrireLog("clic sur RemD");
 }
 
 void ClavierPiano::on_pushButtonReMD_clicked(){
     QSound::play("../SonNote/reMD.wav");
+    ecrireLog("clic sur ReMD");
 }
 
 void ClavierPiano::on_pushButtonFamD_clicked(){
     QSound::play("../SonNote/famD.wav");
+    ecrireLog("clic sur FamD");
 }
 
 void ClavierPiano::on_pushButtonFaMD_clicked(){
     QSound::play("../SonNote/faMD.wav");
+    ecrireLog("clic sur FaMD");
 }
 
 void ClavierPiano::on_pushButtonSolmD_clicked(){
     QSound::play("../SonNote/solmD.wav");
+    ecrireLog("clic sur SolmD");
 }
 
 void ClavierPiano::on_pushButtonSolMD_clicked(){
     QSound::play("../SonNote/solMD.wav");
+    ecrireLog("clic sur SolMD");
 }
 
 void ClavierPiano::on_pushButtonLamD_clicked(){
@@ -267,9 +292,27 @@ void ClavierPiano::on_pushButtonLamD_clicked(){
 
 void ClavierPiano::on_pushButtonLaMD_clicked(){
     QSound::play("../SonNote/laMD.wav");
+    ecrireLog("clic sur LaMD");
 }
 
 
 ClavierPiano::~ClavierPiano(){
 
+}
+
+void ClavierPiano::ecrireLog(QString s){
+    QString fileName = "../log.txt";
+    QFile file(fileName);
+    if (!file.open(QIODevice::Append | QIODevice::Text)){
+        qDebug() << "impossible d'ouvir le fichier";
+        return;
+    }
+
+    QDateTime d = QDateTime::currentDateTime();
+    QString st = d.toString("dd-MM-yyyy  hh:mm:ss  ");
+
+    QTextStream flux(&file);
+    flux << "\n"<< st << s;
+
+    file.close();
 }

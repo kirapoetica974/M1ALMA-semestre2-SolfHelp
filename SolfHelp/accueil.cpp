@@ -1,9 +1,12 @@
 #include "accueil.h"
 #include <QDebug>
 #include <QLabel>
+#include <QFile>
+#include <QDateTime>
 
 Accueil::Accueil(QStackedWidget *p) : QWidget()
 {
+
     resize(600,500);
 
     //INITIALISATION DE CONSTANTES POUR LA DIMENSION DES BOUTONS
@@ -48,14 +51,35 @@ Accueil::Accueil(QStackedWidget *p) : QWidget()
 
 void Accueil::doCours(){
     qDebug() << "J'ai cliqué sur cours";
+    ecrireLog("Cours");
 }
 
 void Accueil::doEntrainement(){
+    ecrireLog("Entrainement");
     pages->setCurrentIndex(2);
     qDebug() << "J'ai cliqué sur Entrainement";
+
 }
 
 void Accueil::doLibre(){
+    ecrireLog("Entrainement Libre");
     pages->setCurrentIndex(1);
     qDebug() << "j'ai cliclé sur Entrainement libre";
+}
+
+void Accueil::ecrireLog(QString s){
+    QString fileName = "../log.txt";
+    QFile file(fileName);
+    if (!file.open(QIODevice::Append | QIODevice::Text)){
+        qDebug() << "impossible d'ouvir le fichier";
+        return;
+    }
+
+    QDateTime d = QDateTime::currentDateTime();
+    QString st = d.toString("dd-MM-yyyy  hh:mm:ss  ");
+
+    QTextStream flux(&file);
+    flux << "\n"<< st << s;
+
+    file.close();
 }

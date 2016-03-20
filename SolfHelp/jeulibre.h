@@ -19,6 +19,7 @@ private:
     QStackedWidget *pages;
     ClavierPiano *clavier;
     QPushButton *accueil;
+    void ecrireLog(QString s);
 
 public slots:
     void goAccueil();

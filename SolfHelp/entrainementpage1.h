@@ -38,6 +38,8 @@ private:
 
 
     void insertFichier(QString s);
+
+    void ecrireLog(QString s);
 };
 
 #endif // ENTRAINEMENTPAGE1_H

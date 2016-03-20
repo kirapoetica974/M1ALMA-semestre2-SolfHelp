@@ -8,6 +8,8 @@
 #include "placenote.h"
 #include <QGraphicsScene>
 #include <QGraphicsView>
+#include <QFile>
+#include <QDateTime>
 
 
 EntrainementFacile::EntrainementFacile(QStackedWidget *p) : QWidget()
@@ -17,12 +19,23 @@ EntrainementFacile::EntrainementFacile(QStackedWidget *p) : QWidget()
     pages = p;
     portee = new Portee(this);
 
+    // 1 seconde = 4000
+    tempsReel=0;
+    tempsRestant=15;
+
     // Initialisation des tableau de notes
     tabNotes = new QVector<Note*>();
     tabReponse = new QVector<Note*>();
 
     //La valiable enJeu sera à vrai quand l'utilisateur aura cliqué sur "commencer"
     enJeu = false;
+
+
+    //Initialisation du Qtimer
+    timer = new QTimer(this);
+    //timer->setInterval(1000);
+    labelTimer = new QLabel("15",this);
+    labelTimer->setGeometry(100,10,50,20);
 
 
 
@@ -79,6 +92,11 @@ EntrainementFacile::EntrainementFacile(QStackedWidget *p) : QWidget()
     accueil->setFocusPolicy(Qt::NoFocus);
     connect(accueil, SIGNAL(clicked()), this, SLOT(goAccueil()));
 
+    // Ajout du bouton retour
+    retour = new QPushButton("Retour", this);
+    retour->setGeometry(10,5,50,50);
+    connect(retour,SIGNAL(clicked()),this,SLOT(precedent()));
+
 
     // Ajout du label ou sera écrit les réponses (il sera invisible jusqu'à la fin)
     labelReponse = new QTextEdit(this);
@@ -98,7 +116,57 @@ EntrainementFacile::EntrainementFacile(QStackedWidget *p) : QWidget()
     connect(go,SIGNAL(pressed()),this,SLOT(commencer()));
 }
 
+
+
+void EntrainementFacile::compter(){
+
+    if(tempsRestant == 0){
+        timer->stop();
+    }
+    else{
+        tempsRestant--;
+        labelTimer->setText(QString::number(tempsRestant));
+        update();
+    }
+
+}
+
+
+
+void EntrainementFacile::precedent(){
+    ecrireLog("Fin de l'entrainement. Score : "+ QString::number(nbBonneReponses) + "/" + QString::number(tabNotes->size()));
+    ecrireLog("Retour choix des partitions");
+
+    enJeu = false;
+    deconnectionDesTouches();
+    labelReponse->setVisible(false);
+    update();
+    tabReponse = new QVector<Note*>();
+    timer->stop();
+    timer = new QTimer();
+    labelTimer->setText("15");
+    tempsRestant = 15;
+    go->setText("Commencer");
+    go->setEnabled(true);
+    go->setVisible(true);
+    tabNotes = new QVector<Note*>();
+    pages->setCurrentIndex(2);
+}
+
 void EntrainementFacile::commencer(){
+    ecrireLog("Début de l'entrainement");
+
+    if(difficulte == "difficile"){
+        labelTimer->setText("15");
+        tempsRestant = 15;
+        timer = new QTimer();
+        connect(timer, SIGNAL(timeout()),this, SLOT(compter()));
+        timer->setInterval(1000);
+        timer->start();
+    }
+
+
+
     labelReponse->setVisible(false);
     tabNotes = new QVector<Note*>();
     tabReponse = new QVector<Note*>();
@@ -106,6 +174,7 @@ void EntrainementFacile::commencer(){
 
     // Le bouton commencer devient non cliquable
     go->setEnabled(false);
+    go->setVisible(false);
 
     //le jeu ayant commencé, la variable enJeu est a true
     enJeu = true;
@@ -249,12 +318,20 @@ void EntrainementFacile::appuiSi2(){
 }
 
 void EntrainementFacile::goAccueil(){
+    ecrireLog("clic sur Accueil");
+    ecrireLog("Fin de l'entrainement. Score : "+ QString::number(nbBonneReponses) + "/" + QString::number(tabNotes->size()));
     enJeu = false;
     deconnectionDesTouches();
     labelReponse->setVisible(false);
     update();
     tabReponse = new QVector<Note*>();
+    timer->stop();
+    timer = new QTimer();
+    labelTimer->setText("15");
+    tempsRestant = 15;
+    go->setText("Commencer");
     go->setEnabled(true);
+    go->setVisible(true);
     pages->setCurrentIndex(0);
     tabNotes = new QVector<Note*>();
 
@@ -312,15 +389,22 @@ void EntrainementFacile::chargerPartition(QString fichier){
 
 
 void EntrainementFacile::paintEvent(QPaintEvent* e){
-    //labelReponse->setVisible(false);
+    QVector<QString> *config = new QVector<QString>();
+
     update();
 
     QString fileName = "temp.txt";
     QFile fichier(fileName);
     fichier.open(QIODevice::ReadOnly | QIODevice::Text);
     QTextStream flux(&fichier);
-    QString nom = flux.readAll();
-    nomPartition = nom;
+    while (!flux.atEnd()) {
+        QString s = flux.readLine();
+        config->append(s);
+    }
+
+    nomPartition = config->at(0);
+    difficulte = config->at(1);
+
 
     // Largeur de la fenetre de l'application
     qreal largeur = size().width();
@@ -350,12 +434,17 @@ void EntrainementFacile::paintEvent(QPaintEvent* e){
 
 
     if(enJeu){
+
+        if(difficulte=="difficile" && tempsRestant == 0){
+            partieTerminee();
+            //labelReponse->setVisible(true);
+        }
+
         if(tabReponse->size() != tabNotes->size()){
             int numeroNote = tabReponse->size();
             painter.drawLine(160+(numeroNote*60),180,160+(numeroNote*60),210);
             painter.drawLine(154+(numeroNote*60),190,160+(numeroNote*60),180);
             painter.drawLine(160+(numeroNote*60),180,166+(numeroNote*60),190);
-
         }
 
         for (int i = 0; i < tabNotes->size(); ++i) {
@@ -365,60 +454,14 @@ void EntrainementFacile::paintEvent(QPaintEvent* e){
         }
         update();
 
-           //Dans le cas ou la partie est terminée
+
+        //Dans le cas ou la partie est terminée
         if(tabReponse->size()>=tabNotes->size()){
-            enJeu = false;
-
-            piano->setEnabled(false);
-            piano->do1->setEnabled(false);
-            piano->do2->setEnabled(false);
-            piano->domD->setEnabled(false);
-            piano->doMD->setEnabled(false);
-            piano->re1->setEnabled(false);
-            piano->re2->setEnabled(false);
-            piano->remD->setEnabled(false);
-            piano->reMD->setEnabled(false);
-            piano->mi1->setEnabled(false);
-            piano->mi2->setEnabled(false);
-            piano->fa1->setEnabled(false);
-            piano->fa2->setEnabled(false);
-            piano->famD->setEnabled(false);
-            piano->faMD->setEnabled(false);
-            piano->sol1->setEnabled(false);
-            piano->sol2->setEnabled(false);
-            piano->solmD->setEnabled(false);
-            piano->solMD->setEnabled(false);
-            piano->la1->setEnabled(false);
-            piano->la2->setEnabled(false);
-            piano->lamD->setEnabled(false);
-            piano->laMD->setEnabled(false);
-            piano->si1->setEnabled(false);
-            piano->si2->setEnabled(false);
-
-            QString userRep = "";
-            QString goodRep = "";
-            int nbBonneReponses = 0;
-
-            // Vérification des bonnes et mauvaises notes
-            for (int j = 0; j < tabNotes->size(); ++j) {
-                userRep = userRep + tabReponse->at(j)->nom + "(" + tabReponse->at(j)->hauteur.at(0) + ") ";
-                goodRep = goodRep + tabNotes->at(j)->nom + "(" + tabNotes->at(j)->hauteur.at(0) + ") ";
-                if((tabReponse->at(j)->nom == tabNotes->at(j)->nom) && (tabReponse->at(j)->hauteur == tabNotes->at(j)->hauteur)){
-                    nbBonneReponses++;
-                }
+            partieTerminee();
+            if(difficulte ==  "difficile"){
+                timer->stop();
+                timer = new QTimer();
             }
-
-
-            QString lab = "<center>La partie est terminée. Vous avez "+QString::number(nbBonneReponses)+" bonnes réponses sur "+QString::number(tabNotes->size())+"<br/>Réponses attendues : "+goodRep+"<br/>Vos réponses : "+userRep+"</p></center>";
-            labelReponse->setText(lab);
-            labelReponse->setReadOnly(true);
-            labelReponse->setVisible(true);
-
-            go->setText("Rejouer");
-            go->setEnabled(true);
-
-
-
         }
         else{
             labelReponse->setVisible(false);
@@ -443,10 +486,9 @@ void EntrainementFacile::placerNote(QPainter &painter,qreal largeur, qreal haute
     qreal haut = espaceEntreLigne;
     if ((note == "do") && (hauteurN == "majeur")) {
         y = yDebutLigne+(5.5*espaceEntreLigne);
-        qreal xl = xDebutNote - rectangle.width();
-        qreal xl2 = xDebutNote + (2*rectangle.width());
+        qreal xl = xDebutNote - 20;
+        qreal xl2 = xDebutNote + 45;
         painter.drawLine(xl,yDebutLigne+(espaceEntreLigne*6),xl2,yDebutLigne+(espaceEntreLigne*6));
-
     }
 
     else if ((note == "re") && (hauteurN == "majeur")){
@@ -493,10 +535,16 @@ void EntrainementFacile::placerNote(QPainter &painter,qreal largeur, qreal haute
     }
     else if ((note == "la") && (hauteurN == "mineur")){
         y = yDebutLigne+((-0.5)*espaceEntreLigne);
+        qreal xl = xDebutNote - 20;
+        qreal xl2 = xDebutNote + 45;
+        painter.drawLine(xl,yDebutLigne+(espaceEntreLigne*0),xl2,yDebutLigne+(espaceEntreLigne*0));
     }
 
     else if ((note == "si") && (hauteurN == "mineur")){
         y = yDebutLigne+((-1)*espaceEntreLigne);
+        qreal xl = xDebutNote - 20;
+        qreal xl2 = xDebutNote + 45;
+        painter.drawLine(xl,yDebutLigne+(espaceEntreLigne*0),xl2,yDebutLigne+(espaceEntreLigne*0));
     }
 
     rectangle = QRectF(QPoint(x, y), QSize(larg, haut));
@@ -521,6 +569,81 @@ void EntrainementFacile::deconnectionDesTouches(){
     disconnect(piano->la2,SIGNAL(clicked()),this,SLOT(appuiLa2()));
     disconnect(piano->si1,SIGNAL(clicked()),this,SLOT(appuiSi1()));
     disconnect(piano->si2,SIGNAL(clicked()),this,SLOT(appuiSi2()));
+}
+
+
+
+void EntrainementFacile::partieTerminee(){
+
+    piano->setEnabled(false);
+    piano->do1->setEnabled(false);
+    piano->do2->setEnabled(false);
+    piano->domD->setEnabled(false);
+    piano->doMD->setEnabled(false);
+    piano->re1->setEnabled(false);
+    piano->re2->setEnabled(false);
+    piano->remD->setEnabled(false);
+    piano->reMD->setEnabled(false);
+    piano->mi1->setEnabled(false);
+    piano->mi2->setEnabled(false);
+    piano->fa1->setEnabled(false);
+    piano->fa2->setEnabled(false);
+    piano->famD->setEnabled(false);
+    piano->faMD->setEnabled(false);
+    piano->sol1->setEnabled(false);
+    piano->sol2->setEnabled(false);
+    piano->solmD->setEnabled(false);
+    piano->solMD->setEnabled(false);
+    piano->la1->setEnabled(false);
+    piano->la2->setEnabled(false);
+    piano->lamD->setEnabled(false);
+    piano->laMD->setEnabled(false);
+    piano->si1->setEnabled(false);
+    piano->si2->setEnabled(false);
+
+    QString userRep = "";
+    QString goodRep = "";
+    nbBonneReponses = 0;
+
+    // Vérification des bonnes et mauvaises notes
+    for (int j = 0; j < tabNotes->size(); ++j) {
+        goodRep = goodRep + tabNotes->at(j)->nom + "(" + tabNotes->at(j)->hauteur.at(0) + tabNotes->at(j)->hauteur.at(1) + ") ";
+    }
+
+    for (int j = 0; j < tabReponse->size(); ++j) {
+        userRep = userRep + tabReponse->at(j)->nom + "(" + tabReponse->at(j)->hauteur.at(0) + tabReponse->at(j)->hauteur.at(1) + ") ";
+        if((tabReponse->at(j)->nom == tabNotes->at(j)->nom) && (tabReponse->at(j)->hauteur == tabNotes->at(j)->hauteur)){
+            nbBonneReponses++;
+        }
+    }
+
+
+
+
+    QString lab = "<center>La partie est terminée. Vous avez "+QString::number(nbBonneReponses)+" bonnes réponses sur "+QString::number(tabNotes->size())+"<br/>Réponses attendues : "+goodRep+"<br/>Vos réponses : "+userRep+"</p></center>";
+    labelReponse->setText(lab);
+    labelReponse->setReadOnly(true);
+    labelReponse->setVisible(true);
+
+    go->setText("Rejouer");
+    go->setEnabled(true);
+    go->setVisible(true);
+}
+
+void EntrainementFacile::ecrireLog(QString s){
+    QString fileName = "../log.txt";
+    QFile file(fileName);
+    if (!file.open(QIODevice::Append | QIODevice::Text)){
+        qDebug() << "impossible d'ouvir le fichier";
+        return;
+    }
+
+    QDateTime d = QDateTime::currentDateTime();
+    QString st = d.toString("dd-MM-yyyy  hh:mm:ss  ");
+
+    QTextStream flux(&file);
+    flux << "\n"<< st << s;
+
 }
 
 

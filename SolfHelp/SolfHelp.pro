@@ -21,10 +21,10 @@ SOURCES += main.cpp\
     jeulibre.cpp \
     clavierpiano.cpp \
     entrainementpage1.cpp \
-    entrainementfacile.cpp \
     note.cpp \
     portee.cpp \
-    placenote.cpp
+    placenote.cpp \
+    entrainementfacile.cpp
 
 HEADERS  += fenetre.h \
     accueil.h \
