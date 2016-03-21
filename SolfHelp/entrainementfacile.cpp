@@ -414,12 +414,17 @@ void EntrainementFacile::chargerPartition(QString fichier){
 void EntrainementFacile::paintEvent(QPaintEvent* e){
     QVector<QString> *config = new QVector<QString>();
 
-    update();
 
     if(difficulte=="difficile"){
         labelTimer->setVisible(true);
         imgTimer->setVisible(true);
         effacerNomTouche();
+    }
+
+    if(difficulte=="facile"){
+        labelTimer->setVisible(false);
+        imgTimer->setVisible(false);
+        afficherNomTouche();
     }
 
     QString fileName = "temp.txt";
@@ -690,4 +695,19 @@ void EntrainementFacile::effacerNomTouche(){
     piano->si2->setText("");
 }
 
-
+void EntrainementFacile::afficherNomTouche(){
+    piano->do1->setText("do");
+    piano->do2->setText("do");
+    piano->re1->setText("re");
+    piano->re2->setText("re");
+    piano->mi1->setText("mi");
+    piano->mi2->setText("mi");
+    piano->fa1->setText("fa");
+    piano->fa2->setText("fa");
+    piano->sol1->setText("sol");
+    piano->sol2->setText("sol");
+    piano->la1->setText("la");
+    piano->la2->setText("la");
+    piano->si1->setText("si");
+    piano->si2->setText("si");
+}

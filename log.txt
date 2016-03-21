@@ -483,3 +483,37 @@
 20-03-2016  23:04:18  Demo2 : Entrainement en mode Difficile
 20-03-2016  23:04:22  Début de l'entrainement
 20-03-2016  23:04:41  Début de l'entrainement
+21-03-2016  16:23:03   Ouverture de l'application.
+21-03-2016  16:23:08  Entrainement
+21-03-2016  16:23:11  Demo3 : Entrainement en mode Difficile
+21-03-2016  16:23:12  Début de l'entrainement
+21-03-2016  16:23:17  clic sur MiM
+21-03-2016  16:23:18  clic sur ReM
+21-03-2016  16:23:18  clic sur MiM
+21-03-2016  16:23:19  clic sur FaM
+21-03-2016  16:23:19  clic sur SolM
+21-03-2016  16:23:19  clic sur SolM
+21-03-2016  16:23:21  Fin de l'entrainement. Score : 0/6
+21-03-2016  16:23:21  Retour choix des partitions
+21-03-2016  16:23:27  Demo3 : Entrainement en mode facile
+21-03-2016  16:23:28  Début de l'entrainement
+21-03-2016  16:23:29  clic sur LaM
+21-03-2016  16:23:29  clic sur SolM
+21-03-2016  16:23:29  clic sur SolM
+21-03-2016  20:50:19   Ouverture de l'application.
+21-03-2016  20:50:31  Entrainement
+21-03-2016  20:50:33  Demo5 : Entrainement en mode Difficile
+21-03-2016  20:50:34  Début de l'entrainement
+21-03-2016  20:50:34  clic sur LaM
+21-03-2016  20:50:35  clic sur Rem
+21-03-2016  20:50:35  clic sur Rem
+21-03-2016  20:50:35  clic sur FaM
+21-03-2016  20:50:36  Fin de l'entrainement. Score : 3407930/6
+21-03-2016  20:50:36  Retour choix des partitions
+21-03-2016  20:50:37  Demo5 : Entrainement en mode facile
+21-03-2016  20:50:38  Début de l'entrainement
+21-03-2016  20:50:39  clic sur LaM
+21-03-2016  20:50:39  clic sur Rem
+21-03-2016  20:50:39  clic sur Rem
+21-03-2016  20:50:40  clic sur LaM
+21-03-2016  20:50:40  clic sur SolM

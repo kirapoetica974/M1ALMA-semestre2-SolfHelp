@@ -101,12 +101,21 @@ public:
 
 
     /**
-     * \fn effacerNomTouche()
+     * \fn void effacerNomTouche()
      * \brief Fonction qui efface le nom des touches du clavier
      *
      * \return void
      */
     void effacerNomTouche();
+
+
+    /**
+     * \fn void afficherNomTouche()
+     * \brief Fonction qui affiche le nom des touches
+     *
+     * \return void
+     */
+    void afficherNomTouche();
     
 signals:
     
