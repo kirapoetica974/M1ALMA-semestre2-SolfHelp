@@ -3,11 +3,13 @@
 #include <QLabel>
 #include <QFile>
 #include <QDateTime>
+#include <QPalette>
 
 Accueil::Accueil(QStackedWidget *p) : QWidget()
 {
 
     resize(600,500);
+
 
     //INITIALISATION DE CONSTANTES POUR LA DIMENSION DES BOUTONS
     // Largeur de la fenetre de l'application
@@ -41,8 +43,8 @@ Accueil::Accueil(QStackedWidget *p) : QWidget()
     boutonLibre = new QPushButton("Entrainement libre", this);
 
     boutonCours->setGeometry(xBouton, yBouton, largeurBouton, hauteurBouton);
-    boutonEntrainement->setGeometry(xBouton ,(yBouton+hauteurBouton), largeurBouton, hauteurBouton);
-    boutonLibre->setGeometry(xBouton, yBouton+2*hauteurBouton, largeurBouton, hauteurBouton);
+    boutonEntrainement->setGeometry(xBouton ,yBouton+hauteurBouton+20, largeurBouton, hauteurBouton);
+    boutonLibre->setGeometry(xBouton, yBouton+(2*hauteurBouton)+40, largeurBouton, hauteurBouton);
 
     connect(boutonLibre, SIGNAL(clicked()), this, SLOT(doLibre()));
     connect(boutonEntrainement, SIGNAL(clicked()), this, SLOT(doEntrainement()));

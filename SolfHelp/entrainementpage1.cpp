@@ -35,7 +35,7 @@ EntrainementPage1::EntrainementPage1(QStackedWidget *p) :QWidget()
 
     //liste déroulante correspondant au choix de la partition
     listePartition = new QComboBox(this);
-    //listePartition->addItem("Choix de la partition");
+    listePartition->addItem("Sélectionner la partition");
     listePartition->addItem("Demo1");
     listePartition->addItem("Demo2");
     listePartition->addItem("Demo3");
@@ -106,8 +106,15 @@ void EntrainementPage1::insertFichier(QString s){
 // fonction qui insère dans un fihcier texte temporaire le choix de la partition
 void EntrainementPage1::choixPartition(){
 
-    facile->setEnabled(true);
-    difficile->setEnabled(true);
+    if(listePartition->currentIndex() != 0){
+        facile->setEnabled(true);
+        difficile->setEnabled(true);
+    }
+    else{
+        facile->setEnabled(false);
+        difficile->setEnabled(false);
+    }
+
 }
 
 void EntrainementPage1::doFacile(){

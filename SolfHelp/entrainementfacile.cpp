@@ -17,6 +17,11 @@ EntrainementFacile::EntrainementFacile(QStackedWidget *p) : QWidget()
     resize(600,500);
     pages = p;
 
+    if(difficulte == "facile"){
+        labelTimer->setVisible(false);
+        imgTimer->setVisible(false);
+    }
+
     // 1 seconde = 4000
     tempsReel=0;
     tempsRestant=15;
@@ -161,6 +166,8 @@ void EntrainementFacile::precedent(){
     timer->stop();
     timer = new QTimer();
     labelTimer->setText("<strong>10</strong>");
+    labelTimer->setVisible(false);
+    imgTimer->setVisible(false);
     tempsRestant = 10;
     go->setText("Commencer");
     go->setEnabled(true);
@@ -344,6 +351,8 @@ void EntrainementFacile::goAccueil(){
     timer->stop();
     timer = new QTimer();
     labelTimer->setText("<strong>10</strong>");
+    labelTimer->setVisible(false);
+    imgTimer->setVisible(false);
     tempsRestant = 10;
     go->setText("Commencer");
     go->setEnabled(true);
